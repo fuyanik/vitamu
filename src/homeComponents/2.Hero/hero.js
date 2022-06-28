@@ -21,7 +21,7 @@ return (
     style={{  textDecoration: "none",}}
     to="/form">    <a class="button-2" href="../FormPage/index.html">
 
-                <span class="buttonText-2"> Recheck Today</span>
+                <span class="buttonText-2"> Get Started</span>
                 <span class="line-2">|</span>
                 <span className="arrow-2">➔</span>
 

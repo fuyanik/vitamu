@@ -53,14 +53,15 @@
 }
 
 .button-2 {
-    width: 255px;
-    height: 42px;
+    width: 235px;
+    height: 48px;
 
     margin-top: 520px;
     margin-left: 160px;
    
     border-radius: 25px;
-   
+    justify-content: center;
+    align-items: center;
     position: absolute;
     text-decoration: none;
     display: flex;
@@ -87,7 +88,7 @@
 .line-2 {
     font-weight: 200;
  font-size: 25px;
- margin-top: 5px;
+ margin-top: 0px;
 }
 
 .arrow-2 {
