@@ -1,0 +1,100 @@
+.card3 h1 {
+    margin-left: -25px;
+    padding: 25px;
+    color: #424242;
+    font-family: Sofia-Light;
+    font-weight: 500;
+    font-size: 21px;
+    max-width: 692px;
+    line-height: 16.5px;
+}
+
+.card3 h2 {
+    color: #424242;
+    font-family: Sofia-Light;
+    font-weight: 500;
+    font-size: 21px;
+    max-width: 692px;
+    line-height: 29.5px;
+}
+
+.card3 span {
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+}
+
+.card3 div {
+    margin-left: -10px;
+}
+
+
+@media screen and (max-width: 601px) {
+    
+
+    .card3 div {
+        width: 91%;
+        min-width: 85%;
+        max-height: 55%;
+    }
+    
+
+    .card3 h1 {
+        margin-top: 120px;
+        margin-left: -25px;
+        padding: 25px;
+        color: #424242;
+        font-family: Sofia-Light;
+        font-weight: 500;
+        font-size: 21px;
+      
+        line-height: 25.5px;
+    }
+
+    .yes-no-button {
+        margin-top: 30px;
+        display: flex;
+        width: 100%;
+        margin-bottom: 380px;
+    }
+    
+    .yes-button {
+        margin: 0 auto;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 360px;
+        height: 36px;
+        color: rgb(51, 51, 51);
+        font-size: 15px;
+        letter-spacing: 0.9px;
+        box-shadow: 0 2px 6px -2px rgb(0 0 0 / 50%);
+        background-color: var(--grey-light, #f8f8f8);
+        color: rgb(51, 51, 51);
+        border-radius: 25px;
+        text-decoration: none;
+        font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    
+    .no-button {
+        margin: 0 auto;
+        margin-right: 105px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 360px;
+        height: 36px;
+        color: rgb(51, 51, 51);
+        font-size: 15px;
+        letter-spacing: 0.9px;
+        box-shadow: 0 2px 6px -2px rgb(0 0 0 / 50%);
+        background-color: var(--grey-light, #f8f8f8);
+        color: rgb(51, 51, 51);
+        border-radius: 25px;
+        text-decoration: none;
+        font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    
+    
+}
+

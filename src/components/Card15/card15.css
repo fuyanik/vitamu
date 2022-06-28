@@ -1,0 +1,47 @@
+.card15 h1 {
+    padding: 12px;
+    color: #424242;
+    font-family: Sofia-Light;
+    font-weight: 500;
+    font-size: 21px;
+    max-width: 720px;
+    line-height: 27.5px;
+}
+
+.card15 h2 {
+    padding: 12px;
+    color: #424242;
+    font-family: Sofia-Light;
+    font-weight: 500;
+    font-size: 21px;
+    max-width: 720px;
+    line-height: 27.5px;
+}
+
+.card15 h3 {
+    padding: 12px;
+    color: #424242;
+    font-family: Sofia-Light;
+    font-weight: 500;
+    font-size: 21px;
+    max-width: 720px;
+    line-height: 27.5px;
+    margin-right: 422px;
+}
+
+.card15 input {
+    margin-top: -1px;
+}
+
+.card15 .nameİnput {
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 601px) {  
+
+.card15 h3 {
+    margin-right: 87px;
+}
+
+
+}

@@ -1,0 +1,50 @@
+.card13 h1 {
+    
+    padding: 12px;
+    color: #424242;
+    font-family: Sofia-Light;
+    font-weight: 500;
+    font-size: 21px;
+    max-width: 720px;
+    line-height: 27.5px;
+}
+
+.card13 h2 {
+ 
+    padding: 12px;
+    color: #424242;
+    font-family: Sofia-Light;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 27.5px;
+    
+}
+
+.card13 span {
+    margin-right: 200px;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+}
+
+@media screen and (max-width: 601px) {
+   
+   
+    
+     .card13 h2 {
+        margin-left: -55px;
+     }
+    .card13 .yes-no-button {
+       
+  
+        margin-top: 65px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 100px;
+       
+        
+    }
+
+  
+}

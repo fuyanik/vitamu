@@ -1,0 +1,96 @@
+.girl {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5ffcb5ab91eb492f96d336f9/72c41a68-4f46-4854-8784-5cc89562c243/Main.jpg");
+    margin-left: 550px;
+    height: 715px;
+    width: 750px;
+    background-size: cover;
+    background-position: center;
+}
+
+#recheck {
+    letter-spacing: -2px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 180px;
+    font-weight: 500;
+    font-size: 80px;
+    padding-bottom: 15px;
+    z-index: 1;
+}
+
+#mammo {
+    letter-spacing: -2px;
+    position: absolute;
+    margin-left: 155px;
+    margin-top: 259px;
+    font-weight: 500;
+    font-size: 80px;
+    padding-bottom: 15px;
+}
+
+#every {
+    font-family: 'Sofia Pro';
+    position: absolute;
+    margin-left: 155px;
+    margin-top: 380px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    max-width: 470px;
+    font-size: 18px;
+    color: #444444;
+}
+
+#we {
+    font-family: 'Sofia Pro';
+    position: absolute;
+    margin-left: 155px;
+    margin-top: 460px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    max-width: 470px;
+    font-size: 18px;
+    color: #444444;
+}
+
+.button-2 {
+    width: 255px;
+    height: 42px;
+
+    margin-top: 520px;
+    margin-left: 160px;
+   
+    border-radius: 25px;
+   
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+   
+    background-color: #142b6f;
+    color: white;
+   
+    font-family: 'Sofia Pro';
+   
+   }
+
+.button-2:hover {
+    background-color: rgb(255, 208, 0);
+    color: #142b6f;
+}
+
+.buttonText-2 {
+   margin: 13px 30px;
+    font-size: 16px;
+    font-weight: 500;
+   
+}
+
+.line-2 {
+    font-weight: 200;
+ font-size: 25px;
+ margin-top: 5px;
+}
+
+.arrow-2 {
+    margin: 10px 32px;
+    font-size: 15px;
+}

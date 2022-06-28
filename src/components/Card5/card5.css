@@ -1,0 +1,53 @@
+.card5 {
+    padding-top: 50px;
+    overflow: auto;
+}
+
+.card5 h1 {
+    padding: 12px;
+    color: #424242;
+    font-family: Sofia-Light;
+    font-weight: 400;
+    font-size: 21px;
+    max-width: 720px;
+    line-height: 27.5px;
+}
+
+.card5 .nameİnput {
+    margin-top: 27px;
+    margin-bottom: 100px;
+    min-width: 644px;
+}
+
+
+
+@media screen and (max-width: 601px) { 
+
+   
+    .card5 div {
+        padding-top: 0px;
+        overflow: auto;
+        max-width: 95%;
+    }
+
+    .card5 h1 {
+        padding: 12px;
+        color: #424242;
+        font-family: Sofia-Light;
+        font-weight: 400;
+        font-size: 19px;
+        max-width: 95%;
+        line-height: 23.5px;
+    }
+
+    .card5 .nameİnput {
+        margin-top: 17px;
+        margin-bottom: 100px;
+        min-width: 90%;
+       
+    }
+
+
+
+
+}

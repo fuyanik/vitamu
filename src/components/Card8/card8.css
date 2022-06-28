@@ -1,0 +1,127 @@
+.card8 h2 {
+    margin-top: -150px;
+    color: #424242;
+    font-family: Sofia-Light;
+    font-weight: 500;
+    font-size: 21px;
+    max-width: 730px;
+    line-height: 25.5px;
+}
+
+.card8 p {
+    margin-left: -85px;
+    margin-top: 10px;
+    color: rgba(34, 34, 34, 0.799);
+    font-family: Sofia-Light;
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 644px;
+    line-height: 16.5px;
+}
+
+.progress-area .row .content {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.progress-area .details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+
+.progress-area .content .progress-bar {
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.content .progress-bar .progress {
+    height: 100%;
+    width: 0%;
+    border-radius: inherit;
+}
+
+.uploaded-area {
+    border-radius: 15px;
+    color: #000;
+    margin-left: -30px;
+    margin-top: 15px;
+    width: 700px;
+    max-height: 232px;
+    overflow-y: scroll;
+}
+
+.uploaded-area li {
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 2px 6px -2px rgb(0 0 0 / 50%);
+}
+
+.uploaded-area li:hover {
+    box-shadow: 0 3.4px 8px -2px rgb(0 0 0 / 60%);
+}
+
+.uploaded-area.onprogress {
+    max-height: 150px;
+}
+
+.uploaded-area::-webkit-scrollbar {
+    width: 0px;
+}
+
+.uploaded-area .row .content {
+    display: flex;
+    align-items: center;
+}
+
+.uploaded-area .row .details {
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+
+.uploaded-area .row .details .size {
+    display: none;
+    color: #404040;
+    font-size: 11px;
+}
+
+.uploaded-area i.fa-check {
+    font-size: 16px;
+}
+
+.wrapper {
+    margin-top: 15px;
+    width: 154px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 16px;
+    box-shadow: 0 2px 6px -2px rgb(0 0 0 / 50%);
+    margin-left: -590px;
+}
+
+.wrapper:hover {
+    box-shadow: 0 3.4px 8px -2px rgb(0 0 0 / 60%);
+}
+
+.wrapper form {
+    height: 5px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#uploadText {
+    font-size: 17px;
+    font-family: Sofia-Light;
+    font-weight: 500;
+    margin-top: 2px;
+    margin-right: -80px;
+    color: rgb(7, 7, 121);
+}

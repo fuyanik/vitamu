@@ -1,0 +1,62 @@
+import CustomizedAccordions from "./accordion";
+import "./haveQuestions.css"
+import {useEffect, useState, useRef} from 'react';
+
+const HaveQuestions = () => {
+
+
+     const [scrollNumber, setScrollNumber] = useState(0);
+     const [isFadeIn, setIsFadeIn] = useState(false);
+    
+     window.addEventListener('scroll', function() {
+      
+       
+       console.log(window.pageYOffset);
+       setScrollNumber(window.pageYOffset);
+   
+       scrollNumber > 4700 && setIsFadeIn(true);
+       });
+
+     
+    return(
+     <div className="have-questions"> 
+
+         
+         
+          <div className="have-questions-main"> 
+
+
+              
+              
+               <div className="have-questions-main-accordion"> 
+
+                    <CustomizedAccordions/>
+              
+               </div>
+
+  
+             
+             
+              
+               <div className={isFadeIn ? 'have-questions-main-img-fadein' : 'have-questions-main-img' }>
+
+
+
+               </div>
+
+       
+       
+       
+       
+          </div>
+
+
+
+     </div>
+
+
+
+    )
+}
+
+export default HaveQuestions;

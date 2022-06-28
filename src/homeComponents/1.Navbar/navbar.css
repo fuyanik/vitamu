@@ -1,0 +1,269 @@
+
+
+.Navbar{
+z-index: 50;
+ align-items: center;
+ display: flex;
+ justify-content: end;
+ position: fixed;
+ width: 100%;
+ height: 82.9px;
+ border-top: 5px solid rgb(249, 208, 24);
+ transition: 300ms;
+
+
+}
+
+.vitamu-logo {
+    position: relative;
+    right: 41%;
+    width: 131.96px;
+    height: 40.99px;
+    z-index: 3;
+
+
+}
+
+
+.nav-items{
+    width: 25%;
+    position: relative;
+    top: 6.5%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 45px;
+}
+   
+   
+.nav-item{
+    cursor: pointer;
+    position: relative;
+    color: #070000;
+    font-family: 'Sofia Pro';
+    display: flex;
+    font-size: 17.3333px;
+ 
+}
+
+
+.nav-item::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+  
+    
+   
+    
+  }
+
+  .nav-item:hover{
+    font-weight: 600;
+  }
+  .nav-item:hover::after{
+  width: 100%;
+
+}
+
+  
+  
+  
+.button {
+    width: 197px;
+    height: 42.8px;
+    
+    padding-top: 9px;
+    padding-left: 20px;
+
+    margin-right: 90px;
+
+    top: 3px;
+    left: 50%;
+   
+
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: row;
+    
+  
+    background-color: #142b6f;
+    color: white;
+   
+    font-family: 'Sofia Pro';
+    text-decoration: none;
+  
+}
+   
+   
+
+
+
+.button:hover {
+    background-color: rgb(255, 208, 0);
+    color: #142b6f;
+}
+
+.buttonText {
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.line {
+    margin-left: 25px;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.arrow {
+  
+    margin-left: 25px;
+    margin-right: 3px;
+    font-size: 18px;
+}
+
+
+.tst{
+
+    width: 100%;
+    height: 999px;
+    background-color: bisque;
+}
+
+
+
+   .navbar-dropdown {
+    animation: drowdown-animate 400ms ease-in-out forwards;
+    opacity: 0;
+    align-self: center;
+    right: 117px;
+    top: 77px;
+    position: absolute;
+    background-color: white;
+    width: 86%;
+    height: 254px;
+    z-index: 55555;
+    
+    border-bottom: 5px solid #142b6f;
+   }
+
+   @keyframes drowdown-animate {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+   }
+
+   .navbar-dropdown-content {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 15px;
+   }
+
+
+   .dropdown-left{
+    background-position: center;
+    background-size: cover;
+    height: 198px;
+    width: 380px;
+    position: relative;
+    top: 9px;   
+   }
+
+   .dropdown-right{
+    left: 65px;
+    position: relative;
+    display: flex;
+    gap: 27px;
+    top: -5px;
+   }
+  
+   .dropdown-line1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    
+    
+ 
+   }
+
+  
+   .line1-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+     }
+    
+
+   .dropdown-line1 h2{
+     font-size: 18px;
+     color: #000000;
+     font-family: 'Sofia Pro';
+     font-weight: 700;
+     cursor: pointer;
+    
+     
+     
+   }
+
+   .dropdown-line1 p {
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Sofia Pro';
+    font-weight: 400;
+    max-width: 430px;
+   }
+
+
+   
+   .dropdown-line2 h2{
+    font-size: 18px;
+    color: #000000;
+    font-family: 'Sofia Pro';
+    font-weight: 600;
+    
+  }
+
+  .dropdown-line2 p {
+   font-size: 16px;
+   color: #000000;
+   font-family: 'Sofia Pro';
+   font-weight: 400;
+   max-width: 430px;
+  }
+
+
+
+ 
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
