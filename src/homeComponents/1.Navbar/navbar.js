@@ -68,7 +68,8 @@ onMouseLeave={() => {
      onMouseLeave={() =>  setShowDropdown(0) }
      /> }  
   
-  
+  <span className="mobile-dropdown-menu"> Menu</span>
+
   <Link
     style={{  textDecoration: "none", display: "flex", position: "relative", right: "40%",}}
     to="/">   <img class="vitamu-logo" src="https://images.squarespace-cdn.com/content/v1/5ffcb5ab91eb492f96d336f9/94e618de-43e9-4d66-8f04-0006070c14a7/Logo.png?format=1500w" alt="vitamu"/> </Link>

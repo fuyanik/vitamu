@@ -8,10 +8,10 @@ return (
 
    <div className="Hero"> 
  
-       <div class="mainText">
+       <div class="main-text">
            
-            <h1 id="recheck"> We recheck</h1>
-            <h1 id="mammo"> mammograms.</h1>
+            <h1 id="recheck"> We recheck mammograms.</h1>
+            
 
             <p id="every"> Every year in the United States, radiologists miss more than 40,000 breast cancer cases in women as a result of human error.  </p>
 

@@ -1,39 +1,49 @@
+.Hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-text{
+    flex-direction: column;
+    position: relative;
+    left: 20px;
+   
+
+    
+}
+
+
 .girl {
     background-image: url("https://images.squarespace-cdn.com/content/v1/5ffcb5ab91eb492f96d336f9/72c41a68-4f46-4854-8784-5cc89562c243/Main.jpg");
-    margin-left: 550px;
+     position: relative;
+     right: 65px;
     height: 715px;
     width: 750px;
     background-size: cover;
     background-position: center;
+    z-index: -1;
+    
 }
 
 #recheck {
     letter-spacing: -2px;
-    position: absolute;
-    margin-left: 150px;
-    margin-top: 180px;
+
+ 
     font-weight: 500;
     font-size: 80px;
-    padding-bottom: 15px;
+    padding-bottom: 35px;
     z-index: 1;
+    max-width: 360px;
+    line-height: 80px;
 }
 
-#mammo {
-    letter-spacing: -2px;
-    position: absolute;
-    margin-left: 155px;
-    margin-top: 259px;
-    font-weight: 500;
-    font-size: 80px;
-    padding-bottom: 15px;
-}
+
 
 #every {
     font-family: 'Sofia Pro';
   
-    position: absolute;
-    margin-left: 155px;
-    margin-top: 380px;
+  
+   
    
     padding-bottom: 15px;
     max-width: 470px;
@@ -43,9 +53,8 @@
 
 #we {
     font-family: 'Sofia Pro';
-    position: absolute;
-    margin-left: 155px;
-    margin-top: 460px;
+  
+ 
     font-weight: 500;
     padding-bottom: 15px;
     max-width: 470px;
@@ -57,13 +66,12 @@
     width: 235px;
     height: 48px;
 
-    margin-top: 520px;
-    margin-left: 160px;
+ 
    
     border-radius: 25px;
     justify-content: center;
     align-items: center;
-    position: absolute;
+  
     text-decoration: none;
     display: flex;
    
@@ -95,4 +103,57 @@
 .arrow-2 {
     margin: 10px 32px;
     font-size: 15px;
+}
+
+
+
+@media screen and (max-width: 768px) { 
+
+.Hero{
+    background-color: white;
+}
+
+    .main-text{
+        left: 12px;
+        margin-top: 125px;
+    }
+
+.girl{
+    display: none;
+}
+
+#recheck{
+    font-size: 47.5px;
+    line-height: 46px;
+}
+
+#every {
+    font-family: 'Sofia Pro';
+    padding-bottom: 15px;
+    max-width: 350px;
+    font-size: 18px;
+    color: #000000;
+}
+    
+#we {
+    font-family: 'Sofia Pro';
+    font-weight: 500;
+    padding-bottom: 15px;
+    max-width: 350px;
+    font-size: 18px;
+    color: #000000;
+    
+  
+}
+
+.button-2 {
+    position: relative;
+    top: 20px;
+}
+ 
+  
+  
+   
+
+    
 }

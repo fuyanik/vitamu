@@ -10,13 +10,14 @@ z-index: 50;
  height: 82.9px;
  border-top: 5px solid rgb(249, 208, 24);
  transition: 300ms;
+ 
 
 
 }
 
 .vitamu-logo {
     position: relative;
-    right: 41%;
+    right: 5%;
     width: 131.96px;
     height: 40.99px;
     z-index: 3;
@@ -250,7 +251,44 @@ z-index: 50;
    max-width: 430px;
   }
 
+  .mobile-dropdown-menu{
+    display: none;
+  }
 
+/* MOBİLE SCREEN */
+
+@media screen and (max-width: 768px) {
+    .Navbar{
+        align-items: center;
+    }
+    
+    .nav-items{
+        display: none;
+    } 
+    
+    .button{display: none;
+       
+    }
+   
+     .vitamu-logo{
+      right: 75%;
+      width: auto;
+      height: 37px;
+     }
+
+     .mobile-dropdown-menu{
+        left: 100px;
+        display: flex;
+        position: relative;
+        font-size: 16.33px;
+        color: #142b6f;
+       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+     }
+     
+    
+    
+}
 
  
    
