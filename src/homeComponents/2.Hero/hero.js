@@ -1,6 +1,7 @@
 import "./hero.css"
 import React from 'react';
 import {Routes, Route, Link, NavLink} from 'react-router-dom';
+import heroImage from './heroImage.png'
 
 const Hero = () => { 
 
@@ -31,7 +32,7 @@ return (
  
  
  
- 
+        <img src={heroImage} className="heroImage"/>
         <div className="girl"></div>
  
  

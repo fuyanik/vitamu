@@ -17,31 +17,35 @@ import Footer from '../homeComponents/11.Footer/footer';
 const Home = () => { 
 
 
+  var mq = window.matchMedia( "(max-width: 768px)" );
+  
+  return (
+  <div className='VitamuHome' > 
+  
+  
+  
+      <Navbar/>
+      <Hero/>
+      <Logos/>
+      <WomenSpeak/>
+
+     { mq.matches ? null : <AllinOneService/> }  
+     { mq.matches ? null :   <BeyondMethods/> }  
+      
+     <br/>  <br/>  <br/>  <br/>    <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/> 
+      <Radiologists/>
+      <MajorPlans/>
+      <HaveQuestions/>
+      <LearningCenter/>
+      <Footer/>
+     
+    
+  </div>
+    )
+  
+  }
+  
+  export default Home;
 
 
  
-
-
-
-return (
-<div> 
-
-    <Navbar/>
-    <Hero/>
-    <Logos/>
-    <WomenSpeak/>
-    <AllinOneService/>
-    <BeyondMethods/>
-    <Radiologists/>
-    <MajorPlans/>
-    <HaveQuestions/>
-    <LearningCenter/>
-     <Footer/>
-   
-  
-</div>
-  )
-
-}
-
-export default Home;

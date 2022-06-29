@@ -84,7 +84,10 @@
 
 
 
-
+.VitamuHome{
+  display: flex;
+  flex-direction: column;
+ }
 .App {
   overflow: hidden;
   position: relative;

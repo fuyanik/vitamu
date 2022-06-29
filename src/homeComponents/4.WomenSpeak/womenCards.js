@@ -1,6 +1,6 @@
-import { height } from "@mui/system";
 
-const WomenCards = ({Background,textLong,textShort,imageWidth,imageHeight,headerDisplay,marginTop}) => { 
+
+const WomenCards = ({Background,textLong,textShort,imageWidth,imageHeight,headerDisplay,marginTop,MarginRight}) => { 
   
   
     //  className={`${imageWoman}`}
@@ -21,8 +21,11 @@ return (
 
    
    
-    <div style=
+    <div 
+   
+    style=
     {{
+    MarginRight : MarginRight,
     marginTop: marginTop,
     backgroundImage : `url(${Background})`,
     width: imageWidth,
