@@ -5,9 +5,24 @@
  
 }
 
+
+
+ /* @import url('http://fonts.cdnfonts.com/css/sofia-pro');
+ */
+@font-face {
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  
+  src: local('Sofia Pro'), url('https://fonts.cdnfonts.com/s/14903/Sofia Pro Regular Az.woff') format('woff');
+}  
+
+
+
+
+
 @import url(//db.onlinewebfonts.com/c/b3be20d887cc494d12ade85591c774a8?family=Sofia+Pro+Light);
 
-@import url('http://fonts.cdnfonts.com/css/sofia-pro');
+
 
 @font-face {
   font-family: Avenir-Black;
@@ -65,6 +80,10 @@
     font-family: Sofia-Semibold;
     src: url(https://static1.squarespace.com/static/5ffcb5ab91eb492f96d336f9/t/623b8191c38c234c268b5ef4/1648066961632/Sofia+Pro+Semi+Bold+Az.otf);
 }
+
+
+
+
 
 .App {
   overflow: hidden;

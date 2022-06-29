@@ -30,10 +30,11 @@
 
 #every {
     font-family: 'Sofia Pro';
+  
     position: absolute;
     margin-left: 155px;
     margin-top: 380px;
-    font-weight: 500;
+   
     padding-bottom: 15px;
     max-width: 470px;
     font-size: 18px;

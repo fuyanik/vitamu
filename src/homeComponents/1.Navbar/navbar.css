@@ -33,6 +33,7 @@ z-index: 50;
     flex-direction: row;
     list-style: none;
     gap: 45px;
+    
 }
    
    
@@ -41,6 +42,9 @@ z-index: 50;
     position: relative;
     color: #070000;
     font-family: 'Sofia Pro';
+    
+    
+    
     display: flex;
     font-size: 17.3333px;
  
