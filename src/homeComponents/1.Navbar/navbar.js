@@ -7,6 +7,7 @@ import dropdown1 from "./images/dropdown1.jpg"
 import dropdown2 from "./images/dropdown2.jpg"
 import dropdown3 from "./images/dropdown3.jpg"
 import dropdown4 from "./images/dropdown4.jpg"
+import vitamuLogo from "./images/vitamuLogo.png"
 
 
 const Navbar = () => { 
@@ -82,7 +83,7 @@ onMouseLeave={() => {
 
   <Link
     style={{  textDecoration: "none", display: "flex", position: "relative", right: "40%",}}
-    to="/">   <img class="vitamu-logo" src="https://images.squarespace-cdn.com/content/v1/5ffcb5ab91eb492f96d336f9/94e618de-43e9-4d66-8f04-0006070c14a7/Logo.png?format=1500w" alt="vitamu"/> </Link>
+    to="/">   <img class="vitamu-logo" src={vitamuLogo} alt="vitamu"/> </Link>
     
    <ul className="nav-items">
       <li className="nav-item"  onMouseMove={() => setShowDropdown(1)  }  >Facts</li>  

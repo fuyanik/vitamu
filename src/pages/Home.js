@@ -10,6 +10,7 @@ import MajorPlans from '../homeComponents/8.MajorPlans/majorPlans';
 import HaveQuestions from '../homeComponents/9.HaveQuestions/haveQuestions';
 import LearningCenter from '../homeComponents/10.LearningCenter/learningCenter';
 import Footer from '../homeComponents/11.Footer/footer';
+import MobileAllinOne from '../homeComponents/20.MobileAllinOne/mobileAllinOne';
 
 
 
@@ -28,8 +29,10 @@ const Home = () => {
       <Hero/>
       <Logos/>
       <WomenSpeak/>
+     
+      
 
-     { mq.matches ? null : <AllinOneService/> }  
+     { mq.matches ?  <MobileAllinOne/> : <AllinOneService/> }  
      { mq.matches ? null :   <BeyondMethods/> }  
       
      <br/>  <br/>  <br/>  <br/>    <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/> 
