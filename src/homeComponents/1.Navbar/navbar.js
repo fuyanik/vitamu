@@ -11,10 +11,19 @@ import dropdown4 from "./images/dropdown4.jpg"
 
 const Navbar = () => { 
 
+   
+   
+   
+   var mq = window.matchMedia( "(max-width: 768px)" );
+ 
    const [isWhite, setIsWhite] = useState(false);
+ 
+ 
    const [scrollNumber, setScrollNumber] = useState(0);
 
    const [showDropdown, setShowDropdown] = useState(0);
+
+  
    
 
 
@@ -28,7 +37,8 @@ const Navbar = () => {
     setScrollNumber(window.pageYOffset);
 
     scrollNumber > 100 ? setIsWhite(true) : setIsWhite(false);
-    });
+   
+   });
 
 return (
   
