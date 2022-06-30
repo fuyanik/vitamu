@@ -71,6 +71,18 @@ const WomenSpeak = () => {
    textShort={"Read here ➔"}
    />}
 
+   {mq.matches  &&    
+   
+   <a class="mobile-button-2" href="../FormPage/index.html">
+
+          <span class="mobile-buttonText-2"> See all stories</span>
+          <span class="mobile-line-2">|</span>
+          <span className="mobile-arrow-2">➔</span>
+
+</a>  }
+
+
+<p className='dividero'> _________________________</p>
 
    
 

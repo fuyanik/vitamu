@@ -11,6 +11,7 @@ import HaveQuestions from '../homeComponents/9.HaveQuestions/haveQuestions';
 import LearningCenter from '../homeComponents/10.LearningCenter/learningCenter';
 import Footer from '../homeComponents/11.Footer/footer';
 import MobileAllinOne from '../homeComponents/20.MobileAllinOne/mobileAllinOne';
+import MobileBeyondMethods from '../homeComponents/21.MobileBeyondMethods/mobileBeyondMethods';
 
 
 
@@ -29,13 +30,13 @@ const Home = () => {
       <Hero/>
       <Logos/>
       <WomenSpeak/>
-     
+      
       
 
      { mq.matches ?  <MobileAllinOne/> : <AllinOneService/> }  
-     { mq.matches ? null :   <BeyondMethods/> }  
+     { mq.matches ?  <MobileBeyondMethods/> :   <BeyondMethods/> }  
       
-     <br/>  <br/>  <br/>  <br/>    <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/> 
+  
       <Radiologists/>
       <MajorPlans/>
       <HaveQuestions/>

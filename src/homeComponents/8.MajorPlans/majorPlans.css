@@ -5,10 +5,11 @@
     align-items: center;
     justify-content: center;
     height: 504px;
+    z-index: 15;
   
-
-
 }
+
+
 
 .major-plans-main {
 
@@ -107,7 +108,7 @@ border-radius: 50px;
 .major-plans-main-items-hospitals{
  margin-left: -105px;
  margin-top: 15px;
-  max-height: 400px;
+  
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -215,7 +216,63 @@ border-radius: 50px;
 
 
 
+@media screen and (max-width: 768px) {
+
+    .major-plans{
+  position: relative;
+  top: 190px;
+        justify-content: flex-start;
+    }
+
+    .major-plans-main{
+       position: relative;
+       left: -17px;
+       width: 98%;
+
+    }
+
+
+    .major-plans-main-items-header h2 {
+        margin-top: 21px;
+        font-weight: 500;
+        font-size: 35px;
+        color: #000000;
+        font-family: Avenir-Roman;;
+    }
+
+    .major-plans-main-telephone {
+       display: none;
+    }
+    .major-plans-main-telephone-fadein{
+        display: none;
+    }
+
+    .major-plans-main-items-footer{
+        margin-top: 0px;
+        position: relative;
+        top: 30px;
+    }
+
+    .major-plans-main-items-footer p:nth-child(1) {
+        font-size: 20px;
+        font-family: 'Sofia Pro';
+        color: black;
+        font-weight: 600;
+        min-width: 30px;
+       
+    }
+
+    .major-plans-main-items-footer p:nth-child(2) {
+        margin-top: 12px;
+        font-size: 18px;
+        font-family: 'Sofia Pro';
+        color: black;
     
+        
+    }
+  
+    
+}    
 
   
 
