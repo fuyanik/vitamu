@@ -8,6 +8,7 @@ import dropdown2 from "./images/dropdown2.jpg"
 import dropdown3 from "./images/dropdown3.jpg"
 import dropdown4 from "./images/dropdown4.jpg"
 import vitamuLogo from "./images/vitamuLogo.png"
+import vitamuLogo2 from "./images/vitamuLogo2.png"
 
 
 const Navbar = () => { 
@@ -44,6 +45,7 @@ const Navbar = () => {
 return (
   
 <div>
+   
 
 <div className="Navbar"
 style={{
@@ -79,12 +81,13 @@ onMouseLeave={() => {
      onMouseLeave={() =>  setShowDropdown(0) }
      /> }  
   
-  <span className="mobile-dropdown-menu"> Menu</span>
+ 
+ 
 
   <Link
-    style={{  textDecoration: "none", display: "flex", position: "relative", right: "40%",}}
+    style={{  textDecoration: "none", display: "flex", }}
     to="/">   <img class="vitamu-logo" src={vitamuLogo} alt="vitamu"/> </Link>
-    
+     <div className="mobile-dropdown-menu"> Menu</div>
    <ul className="nav-items">
       <li className="nav-item"  onMouseMove={() => setShowDropdown(1)  }  >Facts</li>  
       <li className="nav-item"  onMouseMove={() => setShowDropdown(2)  }  >Recheck</li>  
