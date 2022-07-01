@@ -135,7 +135,13 @@ max-width: 137px;
 }
 
 
+.mobile-section-header {
+    position: relative;
+    top: 25px;
+    left: 15px;
+    display: none;
 
+}
 
 
 
@@ -181,7 +187,7 @@ max-width: 137px;
         top: -27px;
         position: relative;
         display: flex;
-        gap: 20px;
+        gap: 50px;
         max-width: 450px;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -196,11 +202,13 @@ max-width: 137px;
       }
       
       .section__item {
+       border-right: 2px solid rgba(145, 139, 139, 0.382);
         display: flex;
         justify-content: center;
         align-items: center;
-        flex: 0 0 300px;
-        
+        flex: 0 0 250px;
+        scroll-snap-align: start;
+     
         height: 450px;
         scroll-snap-align: start;
         background-color: white;

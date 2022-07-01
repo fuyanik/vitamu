@@ -12,6 +12,7 @@ import LearningCenter from '../homeComponents/10.LearningCenter/learningCenter';
 import Footer from '../homeComponents/11.Footer/footer';
 import MobileAllinOne from '../homeComponents/20.MobileAllinOne/mobileAllinOne';
 import MobileBeyondMethods from '../homeComponents/21.MobileBeyondMethods/mobileBeyondMethods';
+import MobileFooter from '../homeComponents/22.MobileFooter/mobileFooter';
 
 
 
@@ -41,7 +42,9 @@ const Home = () => {
       <MajorPlans/>
       <HaveQuestions/>
       <LearningCenter/>
-      <Footer/>
+      
+      {mq.matches ? <MobileFooter/> : <Footer/>}
+      
 
       
      
