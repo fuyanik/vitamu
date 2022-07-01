@@ -4,7 +4,7 @@ import LearningCenterCards from "./learningCenterCards";
 const LearningCenter = () => { 
 
 return (
-
+<> 
 <div className="learning-center">
 
 
@@ -47,6 +47,73 @@ return (
 
 </div>
 
+<div className="mobile-section">
+
+  <div className="mobile-section-header"> 
+     <h2>Learning Center </h2>
+      <p className="mobile-section-text"> Swipe right to see more</p>
+ </div>
+
+<div class="section">
+
+
+
+  <div class="section__item ">     
+  
+   <LearningCenterCards
+        Background={'https://images.squarespace-cdn.com/content/v1/5ffcb5ab91eb492f96d336f9/1643976273800-H1P0ZWZQOKLLGPIGH0DO/Screenshot%25252B2022-01'}
+        LongText={"Wondering why you should have your mammogram rechecked? The reality is that, due to human error, radiologists can fail to diagnose breast cancer when your mammogram is reviewed for the first time."}
+        ShortText= {"Learn more ➔"}
+      />
+      
+  </div>
+
+
+
+  <div class="section__item ">     
+  
+  <LearningCenterCards
+        Background={'https://images.squarespace-cdn.com/content/v1/5ffcb5ab91eb492f96d336f9/1643976463046-54VGRIQD2CP1LJOFY2P4/Screenshot%252B2022-01'}
+        LongText={"The more information you have, the better protection you will have against breast cancer. You can find everything you need to know about breast cancer here."}
+        ShortText= {"Visit resources ➔"}
+       />
+     
+ </div>
+ 
+
+
+
+ <div class="section__item ">     
+  
+ <LearningCenterCards
+         Background={'https://images.squarespace-cdn.com/content/v1/5ffcb5ab91eb492f96d336f9/1643976560326-A6MVBSGDQHGMP8IZNK3V/Screenshot%252B2022-01'}
+         Display={'none'}
+         LongText={"Our artificial intelligence catches breast cancer cases which have been missed, ensuring that they will not go undiagnosed. Put simply, our technology can save lives."}
+         ShortText= {"Discover our technology ➔"}
+    />
+     
+ </div> 
+ 
+ 
+
+
+ <div class="section__item ">     
+  
+ <LearningCenterCards
+         Display={'none'}
+         Background={'https://images.squarespace-cdn.com/content/v1/5ffcb5ab91eb492f96d336f9/1643976660702-BTG26IW45X6DQNTI99UP/Screenshot%252B2022-01-28%252Bat%252B23.59.37.jpg?format=300w'}
+         LongText={"Any donations you make will help to keep women healthy and alive. Make a donation today, and help us to provide free rechecks for the ones who cannot afford today."}
+         ShortText= {"Donate today ➔"}
+       
+       />
+      
+  </div>
+ 
+ 
+  
+</div>
+</div>
+</>
 )
 
 }

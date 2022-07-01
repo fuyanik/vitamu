@@ -36,12 +36,14 @@ const Home = () => {
      { mq.matches ?  <MobileAllinOne/> : <AllinOneService/> }  
      { mq.matches ?  <MobileBeyondMethods/> :   <BeyondMethods/> }  
       
-  
+
       <Radiologists/>
       <MajorPlans/>
       <HaveQuestions/>
       <LearningCenter/>
       <Footer/>
+
+      
      
     
   </div>

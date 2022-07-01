@@ -5,9 +5,11 @@
     align-items: center;
     justify-content: center;
  
+ 
 }
 
 .have-questions-main {
+   
 
     width: 92%;
     height: 100%;
@@ -23,6 +25,7 @@
 
     
 .have-questions-main-accordion{
+  
   
 
     width: 515px;
@@ -43,6 +46,7 @@
 
 
 .have-questions-main-img{
+    
     margin-bottom: 50px;
     background-image: url("https://images.squarespace-cdn.com/content/v1/5ffcb5ab91eb492f96d336f9/1611518265706-OXIRPW4GP8ZFVRNR9U5I/true-agency-JwP90y9wgr4-unsplash.jpg");
     background-size: cover;
@@ -53,6 +57,7 @@
 }
 
 .have-questions-main-img-fadein{
+  
     margin-bottom: 50px;
     background-image: url("https://images.squarespace-cdn.com/content/v1/5ffcb5ab91eb492f96d336f9/1611518265706-OXIRPW4GP8ZFVRNR9U5I/true-agency-JwP90y9wgr4-unsplash.jpg");
     background-size: cover;
@@ -79,7 +84,7 @@
     .have-questions-main {
 
         width: 92%;
-        height: 100%;
+   
         background-color: #FBFBFB;
         display: flex;
         flex-direction: column;
@@ -92,11 +97,9 @@
     
         
     .have-questions-main-accordion{
-      
-    
-        width:90%;
-     
-        height: 300px;
+       
+        height: auto;
+        width:90%;       
         margin-right: 0px;
         margin-bottom: 0px
     }
@@ -134,7 +137,7 @@
         animation: fadeq-in 650ms forwards;
 
         position: relative;
-        top: -99px;
+       margin-top: 25px;
         left: -29px;
     }
     
