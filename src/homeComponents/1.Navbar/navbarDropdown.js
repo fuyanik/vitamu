@@ -1,6 +1,9 @@
-import dropdown1 from "./images/dropdown1.jpg"
 
-const NavbarDropdown = ({onMouseLeave,image}) => {
+import {Routes, Route, Link, NavLink} from 'react-router-dom';
+
+
+
+const NavbarDropdown = ({onMouseLeave,image, line1head1,line1text1,line1head2,line1text2,line1head3,line1text3,line2head1,line2text1,line2head2,line2text2,line2head3,line2text3}) => {
 
   return(
 
@@ -18,16 +21,22 @@ const NavbarDropdown = ({onMouseLeave,image}) => {
                    <div className="dropdown-line1"> 
                         
                        <div className="line1-content"> 
-                        <h2>  Human Error ➔  </h2>
+                     <h2>  {line1head1}  </h2>
 
-                        <p> Learn what human error is and why it happens.</p>
+                        <p> {line1text1}</p>
                         </div>
 
                           
                        <div className="line1-content"> 
-                        <h2>  Missed Diagnosis ➔ </h2>
+                        <h2>   {line1head2} </h2>
 
-                        <p> %10 of breast cancer cases are missed on mammogram screening. Learn how it affects lives.</p>
+                        <p> {line1text2}</p>
+                        </div>
+                   
+                       <div className="line1-content"> 
+                        <h2>   {line1head3} </h2>
+
+                        <p> {line1text3}</p>
                         </div>
 
                        
@@ -41,21 +50,21 @@ const NavbarDropdown = ({onMouseLeave,image}) => {
                    <div className="dropdown-line1">
                     
                      <div className="line1-content"> 
-                        <h2>  Early Detection ➔ </h2>
+                        <h2>  {line2head1}  </h2>
 
-                        <p> It saves lives. More than you think.</p>
+                        <p> {line2text1}</p>
                      </div>
 
                      <div className="line1-content"> 
-                        <h2>  Statistics ➔  </h2>
+                        <h2>  {line2head2}   </h2>
 
-                        <p> U.S. breast cancer statistics are here.</p>
+                        <p> {line2text2} </p>
                      </div>
 
                      <div className="line1-content"> 
-                        <h2>  Resources ➔  </h2>
+                        <h2> {line2head3} </h2>
 
-                        <p> Breast cancer, A to Z.</p>
+                        <p>{line2text3}</p>
                      </div>
 
                           

@@ -139,7 +139,10 @@ function Form () {
     
     <div className="App"  ref={ref}>
  
-        <Navbar/>
+        <Navbar
+       mobileMenuTo={"/mobileNavMenu"}
+       mobileMenuText={"Menu"}
+        />
       
     
        

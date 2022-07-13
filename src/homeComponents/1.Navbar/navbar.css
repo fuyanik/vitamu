@@ -185,8 +185,11 @@ z-index: 50;
 
 
    .dropdown-left{
-    background-position: center;
-    background-size: cover;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5ffcb5ab91eb492f96d336f9/1611518265706-OXIRPW4GP8ZFVRNR9U5I/get-help.jpg");
+    display: flex;
+   background-position:bottom;
+   background-size:cover;
+   background-repeat: no-repeat;
     height: 198px;
     width: 380px;
     position: relative;
@@ -272,7 +275,8 @@ z-index: 50;
         position: fixed;
         height: 60px;
         z-index: 99999999999999;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    }
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
         
                 
         
@@ -303,12 +307,12 @@ z-index: 50;
 }
 
 .mobile-dropdown-menu{
-   left: 70px;
+   left: 85px;
    display: flex;
    position: relative;
    font-size: 16.33px;
    color: #142b6f;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family:'Sofia Pro'
 
 }
 

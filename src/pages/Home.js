@@ -27,7 +27,10 @@ const Home = () => {
   
   
   
-      <Navbar/>
+      <Navbar
+      mobileMenuText={'Menu'}
+      mobileMenuTo ={"/mobileNavMenu"}
+      />
       <Hero/>
       <Logos/>
       <WomenSpeak/>
