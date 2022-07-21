@@ -11,7 +11,7 @@ const MajorPlans = () => {
   window.addEventListener('scroll', function() {
    
     
-    console.log(window.pageYOffset);
+    
     setScrollNumber(window.pageYOffset);
 
     scrollNumber > 4300 && setIsFadeIn(true);

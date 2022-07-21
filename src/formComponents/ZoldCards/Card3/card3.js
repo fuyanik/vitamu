@@ -5,7 +5,7 @@ const Card3 = () => {
 
 return (
    
-   <div className="card3">
+   <div  id="cardo3" className="card3">
     <div>
         <h1>Thank you, I hope you are feeling great today</h1>
         <h2>Here is an important question to make sure your breasts are healthy. <span>Did you get your mammogram within last 12 months? </span></h2>

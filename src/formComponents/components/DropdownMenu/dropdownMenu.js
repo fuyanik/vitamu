@@ -2,12 +2,18 @@ import "./dropdownMenu.css"
 import { useState } from "react";
 import { MdArrowDropDown } from "react-icons/md";
 import React from 'react';
+import gV from "../../../gV.js";
 
 const  DropdownMenu = ({listİtem,top,right}) => {
   
   
   const [isActive, setIsActive] = useState(false);
   const [selected, setIsSelected] = useState("Choose one");
+
+  const handleClick = () => {
+    setIsActive(!isActive);
+  
+  }
 
 
 
@@ -26,9 +32,7 @@ const  DropdownMenu = ({listİtem,top,right}) => {
           
         
         <div
-          onClick={(e) => {
-            setIsActive(!isActive);
-          }}
+          onClick={handleClick}
           className="dropdown-btn"
         >
           {selected}

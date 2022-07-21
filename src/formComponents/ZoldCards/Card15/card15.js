@@ -1,5 +1,6 @@
 import "./card15.css"
 import React from 'react';
+import gV from "../../gV"
 const Card15 = ({display}) => {
  return (
 
@@ -10,7 +11,16 @@ const Card15 = ({display}) => {
     <h2>Now, it’s time to enroll our “always free” monthly breast self-exam reminder. You, like many of us, will probably forget to get one done, and this reminder will help you not to miss even one. </h2>
     <h3>What is your e-mail address?</h3>
 
-    <input className="nameİnput" type="email" name="name" id="name"/>
+    <input
+     onChange={(e) => {
+         
+        gV.MailAddres = e.target.value;
+    }}
+
+     
+    
+    
+    className="nameİnput" type="email" name="name" id="name"/>
 </div>
 
  )

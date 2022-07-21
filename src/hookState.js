@@ -1,7 +1,7 @@
 
 import { createGlobalState } from 'react-hooks-global-state';
 import { MdOutlineArrowForward } from "react-icons/md";
-import  "./components/ForwardButton/forwardButton.css"
+import  "./formComponents/components/ForwardButton/forwardButton.css"
 import React from 'react';
 
 const {setGlobalState, useGlobalState} = createGlobalState({
@@ -11,8 +11,11 @@ const {setGlobalState, useGlobalState} = createGlobalState({
     myButtonWidth: '100px',
     myButtonleft: "48%",
     myBackButtonleft: "44.7%",
-    userName: "",
+   
     scq: 0,
+
+
+
 
 });
 

@@ -38,7 +38,7 @@ const Navbar = ({mobileMenuText,mobileMenuTo}) => {
   window.addEventListener('scroll', function() {
    
     
-    console.log(window.pageYOffset);
+   
     setScrollNumber(window.pageYOffset);
 
     scrollNumber > 100 ? setIsWhite(true) : setIsWhite(false);
@@ -177,11 +177,24 @@ onMouseLeave={() => {
     style={{  textDecoration: "none",}}
     to="/form"> 
      
-     <a class="button" href="../FormPage/index.html">
+     <a class="button" >
       <span className="buttonText"> Get Started</span>
       <span className="line">|</span>
      
       <span className="arrow">➔</span>
+   </a>  
+   
+   </Link>
+
+   <Link
+    style={{  textDecoration: "none",}}
+    to="/login"> 
+     
+     <a class="button" >
+      <span className="buttonText"> Login</span>
+     
+     
+     
    </a>  
    
    </Link>

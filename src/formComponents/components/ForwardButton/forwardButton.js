@@ -1,7 +1,7 @@
 import React from 'react';
 import "./forwardButton.css";
 import { MdOutlineArrowForward } from "react-icons/md";
-import gV from '../../gV';
+import gV from '../../../gV';
 
 
 

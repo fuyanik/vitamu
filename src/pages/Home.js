@@ -13,11 +13,16 @@ import Footer from '../homeComponents/11.Footer/footer';
 import MobileAllinOne from '../homeComponents/20.MobileAllinOne/mobileAllinOne';
 import MobileBeyondMethods from '../homeComponents/21.MobileBeyondMethods/mobileBeyondMethods';
 import MobileFooter from '../homeComponents/22.MobileFooter/mobileFooter';
-
+import { Timestamp,collection,addDocument, addDoc } from 'firebase/firestore';
+import gV from '../gV';
+import db from '../firebase';
 
 
 
 const Home = () => { 
+
+
+ 
 
 
   var mq = window.matchMedia( "(max-width: 768px)" );

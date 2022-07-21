@@ -5,6 +5,18 @@
  
 }
 
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+:root{
+  --navyBlue: #142B6F;
+}
+
+
+
 
 
  /* @import url('http://fonts.cdnfonts.com/css/sofia-pro');
@@ -88,6 +100,7 @@
   display: flex;
   flex-direction: column;
  }
+
 .App {
   overflow: hidden;
   position: relative;
@@ -107,7 +120,7 @@
  
 }
 
-.box,.box2,.box3,.box4 {
+/* .box,.box2,.box3,.box4 {
 
   border: none;
   border-top: 7px solid rgb(8, 8, 141);
@@ -117,7 +130,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+}  */
 
 .card1,
 .card2,
@@ -136,9 +149,11 @@
 .card14,
 .card15,
 .card16,
-.card17 {
+.card17,
+.register-page,
+login-page{
     border: none;
-    border-top: 7px solid rgb(8, 8, 141);
+  
     height: 100%;
     width: 100%;
     display: flex;
@@ -147,6 +162,80 @@
     justify-content: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.register-page label {
+  font-weight: 800;
+  font-size: 16px;
+  font-family: Avenir-Roman;
+  color: #000000;
+}
+
+.register-button{
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Sofia-Medium !important;
+}
+
+
+.Panel{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+.Panel h2 {
+  
+  color: red;
+  font-size: 19px;
+  font-family: "Sofia Pro Light";
+  text-align: start;
+}
+.Panel p {
+  color: black;
+  font-size: 18px;
+  font-family: "Sofia Pro Light";
+  text-align: start;
+ }
+
+ .panel-item{
+  display: flex;
+  gap: 15px;
+ }
+
+
+ .slide-background{
+  top: 30px;
+  height: 650px;
+  width: 1300px;
+ 
+  background-color: #F1F3F7;
+  z-index: -1;
+  border-bottom-right-radius: 450px;
+  border-top-right-radius: 450px;
+  position: fixed;
+ }
+
+ .slide-background2{
+  left: -20px;
+  top: -50px;
+  height: 820px;
+  width: 1440px;
+  position: fixed;
+  background-color: #F8F9FB;
+  z-index: -2;
+  border-bottom-right-radius: 450px;
+  border-top-right-radius: 450px;
+ }
 
 @media screen and (max-width: 768px) {
  

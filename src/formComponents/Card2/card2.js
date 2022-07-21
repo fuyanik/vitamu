@@ -17,7 +17,6 @@ import gV from "../../gV.js";
 const Card2 = () => {
 
 
-  const [userName] = useGlobalState("userName");
   
   const iOSBoxShadow =
   "0 3px 1px rgba(0,0,0,0.1),0 4px 8px rgba(0,0,0,0.13),0 0 0 1px rgba(0,0,0,0.02)";
@@ -49,7 +48,7 @@ const IOSSlider = styled(Slider)(({ theme }) => ({
 //SLİDER CHANGABLE VALUE
   "& .MuiSlider-valueLabel": {
     fontSize: 14,
-    fontWeight: "bold",
+    fontWeight: "600",
     top: 1,
     backgroundColor: "unset",
     color: theme.palette.text.primary,
@@ -64,8 +63,8 @@ const IOSSlider = styled(Slider)(({ theme }) => ({
 
   // Slider unfilled area
   "& .MuiSlider-rail": {
-    opacity: 0.5,
-    backgroundColor: "rgba(20, 43, 111, 0.2)"
+    opacity: 1,
+    backgroundColor: "#FFFFFF"
   },
 
 
@@ -80,41 +79,44 @@ const IOSSlider = styled(Slider)(({ theme }) => ({
 
 
 return (
+  <div className="card2">
+    <div className="card2-main ">
+      <div className="card2-texts">
+        <h1>
+          It's really nice to meet you <span id="userName">{gV.userName}</span>,{" "}
+          <span> how old are you?</span>
+        </h1>
+        <p>
+        Use the slider to choose your age. This is important for your recheck, and I promise it will be our secret.
+        </p>
+      </div>
 
+      <div className="Slider-Area">
+        <span className="min-age"> 18 </span>
 
+        <Box
+          sx={{
+            width: 635,
+            marginBottom: 0,
+            marginTop: 5,
+          }}
+        >
+          <IOSSlider
+            min={18}
+            aria-label="ios slider"
+            defaultValue={28}
+            valueLabelDisplay="on"
+            onChange={(e) => {
+              gV.age = e.target.value;
+            }}
+          />
+        </Box>
 
-<div className="card2"> 
-
-
-<h1>It's really nice to meet you <span id="userName">{gV.userName}</span>, <span> how old are you?</span></h1>
-<p>This is important for your recheck, and I promise it will be our secret.</p>
-
-<div className='Slider-Area'> 
-<span className='min-age'> 18 </span>
-
-<Box sx={{ 
-  width: 635,
-  marginBottom: 0,
-  marginTop: 5,
-  
-  }}>
-   
-      <IOSSlider
-        min={18}
-        aria-label="ios slider"
-        defaultValue={28}
-        valueLabelDisplay="on"
-      />
-    </Box>
-   
-    <span className='max-age'> 100 </span>
-    
+        <span className="max-age"> 100 </span>
+      </div>
     </div>
-</div>
-
-
-
-)
+  </div>
+);
 
 
 }

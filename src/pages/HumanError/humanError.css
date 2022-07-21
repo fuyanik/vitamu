@@ -1,0 +1,150 @@
+.human-error{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 170px;
+    padding-top: 110px 
+    
+    
+}
+
+.human-error-main{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+  
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.human-error-main-header{
+    width: 100%;
+    height: auto;
+    display: flex;
+ 
+   
+    border: 3px solid green;
+}
+
+.human-error-main-header-left{
+    width: 680PX;
+    gap: 20px;
+    display: inline-flex;
+    flex-direction: column;
+   
+}
+
+.human-error-main-header-left p:nth-child(1) {
+    width: 130px;
+   font-size: 15px;
+   color: #000000;
+   font-family: 'Sofia Pro';
+   background-color: #FFD000;
+   padding: 5px 28px;
+   border-radius: 88px;
+   }
+
+.human-error-main-header-left h1 {
+   font-size: 48px;
+   font-family: Avenir-Roman;
+   color: #0A2470;
+   font-weight: 500;
+   letter-spacing: -1px;
+   
+   
+   }
+
+   .human-error-main-header-left span {
+    border-bottom: 7px solid #FFD000;
+   
+   }
+
+   .human-error-main-header-left p:nth-child(3) {
+    font-size: 16px;
+    font-family: 'Sofia Pro';
+    color: #949494;
+    margin-top: 10px;
+    
+}
+
+.human-error-main-header-right{
+    width: 48%;
+   height: 100%;
+   position: relative;
+   bottom: 30px;
+  
+}
+
+.human-error-main-header-left-audio{
+    width: 480px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.human-error-main-hero{
+    width: 77%;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    
+}
+.human-error-main-hero-texts{
+    margin-top: 50px;
+    width: 100%;
+    text-align: start;
+  display: flex;
+  flex-direction: column;
+ gap: 19px;
+}
+
+.human-error-main-hero-texts ul {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    border: 1px solid blueviolet;
+    margin-left: 4%;
+}
+
+.human-error-main-hero-texts h2{
+    text-align: start;
+font-family: 'Sofia Pro';
+font-size: 24px;
+color: #000000;
+font-weight: 600;
+
+}
+
+.human-error-main-hero-texts p {
+    text-align: start;
+    font-size: 18px;
+    font-family: 'Sofia Pro';
+    color: #000000;
+   
+}
+
+.human-error-main-hero-texts span{
+    text-align: start;
+    font-size: 18px;
+    font-family: 'Sofia Pro';
+    color: #000000;
+   font-weight: 800;
+}
+
+
+.human-error-pie{
+    display: flex;
+    width: 490px;
+    align-self: center;
+}
+
+.human-error-child{
+
+    display: flex;
+    gap: 55px;
+}

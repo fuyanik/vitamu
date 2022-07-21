@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useState } from "react";
 import "./yesNoButton.css"
-import gV from "../../gV"
-import { setGlobalState, useGlobalState } from "../../hookState";
+import gV from "../../../gV"
+import { setGlobalState, useGlobalState } from "../../../hookState";
 import { MdOutlineArrowForward } from "react-icons/md";
 
 import React from 'react';
