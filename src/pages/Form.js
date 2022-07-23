@@ -18,6 +18,12 @@ import Navbar from '../homeComponents/1.Navbar/navbar';
 import Card3 from '../formComponents/Card3/card3';
 import Card4 from '../formComponents/Card4/card4';
 import Card5 from '../formComponents/Card5/card5';
+import Card6 from '../formComponents/Card6/card6';
+import Card7 from '../formComponents/Card7/card7';
+import Card8 from '../formComponents/Card8/card8';
+import Card9 from '../formComponents/Card9/card9';
+import Card10 from '../formComponents/Card10/card10';
+import Card11 from '../formComponents/Card11/card11';
 
 
 
@@ -38,6 +44,9 @@ function Form () {
   const [buttonWidth] = useGlobalState("myButtonWidth");
   const [buttonleft] = useGlobalState("myButtonleft");
   const [backButtonleft] = useGlobalState("myBackButtonleft");
+
+  //form destiniy
+  const [formDestiny] = useGlobalState("formDestiny");
   
   
  
@@ -121,7 +130,26 @@ function Form () {
         <Card3/>
         <Card4/>
         <Card5/>
-
+        <Card6/>
+        <Card7/>
+        
+        <Card8
+         display={formDestiny === 1  ? "flex" : "none"}
+        />
+        <Card9
+         display={formDestiny === 1  ? "flex" : "none"}
+        />
+        <Card10
+         display={formDestiny === 1  ? "flex" : "none"}
+         text1={"Superb, we received all of your files"}
+         text2={"This is what you will pay for your recheck:"}
+        />
+        
+        <Card11/>
+        <Card10
+         text1={"You are all set. You will be called by your imaging center for the release of your medical images. We will acquire a copy of your medical images on your behalf. "}
+         text2={"This is what you will pay for your recheck:"}
+    />
 
         
 

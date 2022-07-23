@@ -71,6 +71,8 @@
     font-family: Sofia-Light;
     color: rgb(128, 128, 128);
     font-weight: 200;
+    position: relative;
+    bottom: 6px;
   }
 .nameİnput:focus {
     outline: none;
