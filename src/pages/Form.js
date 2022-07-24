@@ -47,8 +47,11 @@ function Form () {
 
   //form destiniy
   const [formDestiny] = useGlobalState("formDestiny");
+
+  //help payment sccreen open
+  const [isPayScreen] = useGlobalState("isPayScreen");
   
-  
+
  
   
   
@@ -77,7 +80,8 @@ function Form () {
      
    
     
-    
+  console.log(gV);
+  console.log(gV.i)
   
 
   function forwardButtonClick () {
@@ -90,28 +94,46 @@ function Form () {
       setGlobalState("myBackButtonleft", "32%");
     }
 
-    setİsFade(!isFade);
-    gV.i = gV.i + 1;
+    if(gV.isUserClickOtherAnswer){
+      gV.doYouHave.push(gV.otherAnswer);
+     
+    }
 
-    setSlidePage(`translateY(${-gV.i * divHeight}px)`);
-  }
+    setİsFade(!isFade);
+
+    if(gV.p !== 8){
+
+    gV.i = gV.i + 1;
+    gV.p = gV.p + 1;
+    console.log(isPayScreen);
+ 
+    setSlidePage(`translateY(${-gV.i * divHeight}px)`); }
+    
+    else {
+      console.log(isPayScreen);
+      setGlobalState("isPayScreen", true);
+ 
+    }
+
+  
+    }
+
+    
 
 
 
   function backButtonClick () {
-    gV.paymentFee = 0;
+   
     
     if( gV.i> 0) { 
       gV.i = gV.i - 1
+      gV.p = gV.p - 1
      setSlidePage(`translateY(${ (-gV.i) * divHeight }px)`);
     }
   }
 
-    
-
-
   
-
+console.log(gV.p);
 
   //ALL COMPONENTS START HERE**************************************
   return (
@@ -125,6 +147,8 @@ function Form () {
       <div className="slide-background2"></div>
 
       <div className="left-slide" style={{ transform: slidePage }}>
+      
+      
         <Card1 animation={isFade && "fade-in"} />
         <Card2/>
         <Card3/>
@@ -134,19 +158,31 @@ function Form () {
         <Card7/>
         
         <Card8
-         display={formDestiny === 1  ? "flex" : "none"}
+         display={formDestiny === 1 || formDestiny === 4  || formDestiny === 3 ? "flex" : "none"}
         />
+
+        <Card10
+        display={formDestiny === 1 || formDestiny === 4   ? "flex" : "none"}
+        text1={"Alright, we will send you an address to which you should mail your medical images right after the payment authorization."}
+        text2={"This is what you will pay for your recheck: "}
+        />
+
+        
         <Card9
-         display={formDestiny === 1  ? "flex" : "none"}
+         display={formDestiny === 1 || formDestiny === 3  ? "flex" : "none"}
         />
         <Card10
-         display={formDestiny === 1  ? "flex" : "none"}
+         display={formDestiny === 1 || formDestiny === 3  ? "flex" : "none"}
          text1={"Superb, we received all of your files"}
          text2={"This is what you will pay for your recheck:"}
         />
         
-        <Card11/>
+        <Card11
+          display={formDestiny === 2   ? "flex" : "none"}
+        
+        />
         <Card10
+          display={formDestiny === 2   ? "flex" : "none"}
          text1={"You are all set. You will be called by your imaging center for the release of your medical images. We will acquire a copy of your medical images on your behalf. "}
          text2={"This is what you will pay for your recheck:"}
     />
@@ -213,14 +249,14 @@ function Form () {
               */}
       </div>
 
-      <ForwardButton
+ { !isPayScreen &&  <ForwardButton
         forwardButtonClick={forwardButtonClick}
         width={buttonWidth}
         left={buttonleft}
         buttonText={defaultType}
-      />
+      />   }
 
-      <BackButton backButtonClick={backButtonClick} left={backButtonleft} />
+{ !isPayScreen &&   <BackButton backButtonClick={backButtonClick} left={backButtonleft} /> }
     </div>
   );
  }

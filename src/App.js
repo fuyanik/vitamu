@@ -2,7 +2,8 @@
 import Home from "./pages/Home"
 import Form from "./pages/Form"
 import gV from "./gV";
-import db from "./firebase";
+
+import { db } from "./firebase";
 
 import { Timestamp} from 'firebase/firestore';
 import MobileNavMenu from './pages/MobileNavMenu/mobileNavMenu';
@@ -49,7 +50,13 @@ export default function App() {
             
     Name: gV.userName,
     UserAge : gV.age,
-    createdAt: Timestamp.now().toDate(),
+    WhichOfTheFollowingAppliesToYou: gV.appliestTo,
+    BiRads: gV.biRads,
+    DoYouHaveAnyOfThese: gV.doYouHave,
+    MailAddress: gV.MailAddres,
+    IsHaveDigitalCopy: gV.isHaveDigitalCopy,
+    PreferTo: gV.preferTo,
+    MedicalCenterName: gV.medicalCenterName,
    
    }) 
 
@@ -60,6 +67,15 @@ export default function App() {
     db.collection("VitamuUsersREAL").add({
       Name: gV.userName,
       UserAge : gV.age,
+      WhichOfTheFollowingAppliesToYou: gV.appliestTo,
+      BiRads: gV.biRads,
+      DoYouHaveAnyOfThese: gV.doYouHave,
+      MailAddress: gV.MailAddres,
+      IsHaveDigitalCopy: gV.isHaveDigitalCopy,
+      PreferTo: gV.preferTo,
+      MedicalCenterName: gV.medicalCenterName,
+
+
       createdAt: Timestamp.now().toDate(),
     }) 
   });  */
@@ -82,8 +98,7 @@ export default function App() {
 
   
             
- 
-  
+
 
  
   

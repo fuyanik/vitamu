@@ -1,6 +1,9 @@
 import AnswerButtons from "../components/AnswerButtons/answerButtons";
 import "./card4.css";
-import { useState } from "react";
+import { useState,useEffect  } from "react";
+import gV from "../../gV";
+
+
 
 const Card4 = () => { 
 
@@ -12,7 +15,25 @@ const Card4 = () => {
    const [isSelect4c, SetİsSelect4c] = useState(false);
   
   
+   const findIndex = (catchText)=> {
+    var carIndex = gV.biRads.indexOf(catchText);
+    gV.biRads.splice(carIndex, 1);
+   
+  }
+
+
   
+  
+
+
+
+
+
+
+
+
+
+
     return (
       <div className="card4">
         <div className="card4-main">
@@ -25,38 +46,40 @@ const Card4 = () => {
           <div className="card4-main-buttons">
          
              <div className={` ${isSelect1 ? "answer-buttons-clicked" : "answer-buttons"}`}
-              onClick={() => { SetİsSelect1(!isSelect1); SetİsSelect2(false); SetİsSelect3(false); SetİsSelect4a(false); SetİsSelect4b(false); SetİsSelect4c(false); }}>
+              onClick={() => {
+              
+                gV.biRads = "1";  SetİsSelect1(true); SetİsSelect2(false); SetİsSelect3(false); SetİsSelect4a(false); SetİsSelect4b(false); SetİsSelect4c(false); }}>
               1
              </div>
               
            
 
              <div className={` ${isSelect2 ? "answer-buttons-clicked" : "answer-buttons"}`}
-             onClick={() => { SetİsSelect2(!isSelect2); SetİsSelect1(false); SetİsSelect3(false); SetİsSelect4a(false); SetİsSelect4b(false); SetİsSelect4c(false); }}>
+             onClick={() => { gV.biRads = "2"; SetİsSelect2(true); SetİsSelect1(false); SetİsSelect3(false); SetİsSelect4a(false); SetİsSelect4b(false); SetİsSelect4c(false); }}>
              
               2
              </div>
              
              <div className={` ${isSelect3 ? "answer-buttons-clicked" : "answer-buttons"}`} 
-             onClick={() => { SetİsSelect3(!isSelect3); SetİsSelect1(false); SetİsSelect2(false); SetİsSelect4a(false); SetİsSelect4b(false); SetİsSelect4c(false); }}>
+             onClick={() => {   gV.biRads = "3"; SetİsSelect3(true); SetİsSelect1(false); SetİsSelect2(false); SetİsSelect4a(false); SetİsSelect4b(false); SetİsSelect4c(false); }}>
              
               3
              </div>
              
              <div className={` ${isSelect4a ? "answer-buttons-clicked" : "answer-buttons"}`} 
-             onClick={() => { SetİsSelect4a(!isSelect4a); SetİsSelect1(false); SetİsSelect2(false); SetİsSelect3(false); SetİsSelect4b(false); SetİsSelect4c(false); }}>
+             onClick={() => {  gV.biRads = "4a"; SetİsSelect4a(true); SetİsSelect1(false); SetİsSelect2(false); SetİsSelect3(false); SetİsSelect4b(false); SetİsSelect4c(false); }}>
              
               4A
              </div>
            
              <div className={` ${isSelect4b ? "answer-buttons-clicked" : "answer-buttons"}`}
-             onClick={() => { SetİsSelect4b(!isSelect4b); SetİsSelect1(false); SetİsSelect2(false); SetİsSelect3(false); SetİsSelect4a(false); SetİsSelect4c(false); }}>
+             onClick={() => {  gV.biRads = "4b"; SetİsSelect4b(true); SetİsSelect1(false); SetİsSelect2(false); SetİsSelect3(false); SetİsSelect4a(false); SetİsSelect4c(false); }}>
              
               4B
              </div>
 
              <div className={` ${isSelect4c ? "answer-buttons-clicked" : "answer-buttons"}`}
-             onClick={() => { SetİsSelect4c(!isSelect4c); SetİsSelect1(false); SetİsSelect2(false); SetİsSelect3(false); SetİsSelect4a(false); SetİsSelect4b(false); }}>
+             onClick={() => {  gV.biRads = "4c"; SetİsSelect4c(true); SetİsSelect1(false); SetİsSelect2(false); SetİsSelect3(false); SetİsSelect4a(false); SetİsSelect4b(false); }}>
              
               4C
              </div>

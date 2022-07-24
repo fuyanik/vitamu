@@ -1,10 +1,16 @@
 import "./card10.css"
+import gV from "../../gV";
+import PayScreen from "../PayScreen/payScreen";
+import { useGlobalState } from "../../hookState";
 
 
 const Card10 = ({text1,text2,display}) => { 
-
+  const [isPayScreen] = useGlobalState("isPayScreen");
    return (
-     <div className="card10" style={{display:display}}>
+    <> 
+    {
+      isPayScreen ? <PayScreen/> :
+    <div className="card10" style={{display:display}}>
        <div className="card10-main">
            <div className="card10-main-texts" >
 
@@ -18,8 +24,10 @@ const Card10 = ({text1,text2,display}) => {
 
 
        </div>
-     </div>
-   );
+     </div>   }
+   
+     </>
+     );
 
 }
 

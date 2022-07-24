@@ -1,6 +1,14 @@
+import gV from "../../gV";
 import "./card6.css";
 
 const Card6 = () => { 
+
+
+  const handleChange = (e) => {
+       gV.MailAddres = e.target.value;
+     
+   
+    }
 
     return (
       <div className="card6">
@@ -15,7 +23,7 @@ const Card6 = () => {
             
           </div>
 
-          <input className="nameİnput" placeholder="Type your e-mail here."/>
+          <input onChange={handleChange} className="nameİnput" placeholder="Type your e-mail here."/>
 
         </div>
       </div>

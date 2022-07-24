@@ -1,5 +1,5 @@
 .answer-buttons{
-
+    transition: 180ms;
     display: flex;
     align-items: center;
    padding-left: 18px;

@@ -1,8 +1,12 @@
+import gV from "../../gV"
 import "./card11.css"
 
-const Card11 = () => { 
+const Card11 = ({display}) => { 
+
+  const handleChange = (e) => { gV.medicalCenterName = e.target.value }
+
   return ( 
-    <div className="card11">
+    <div className="card11" style={{display:display}}>
       <div className="card11-main">
         <div className="card11-main-texts">
            
@@ -10,7 +14,7 @@ const Card11 = () => {
              <p>Please add City and State at the end of your answer.</p>
 
         </div>
-        <input className="nameİnput"/>
+        <input onChange={handleChange} className="nameİnput"/>
       </div>
     </div>
     )

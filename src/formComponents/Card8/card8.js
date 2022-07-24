@@ -1,6 +1,10 @@
 import AnswerButtons from "../components/AnswerButtons/answerButtons";
 import "./card8.css";
 import { useState } from "react";
+import { setGlobalState, useGlobalState } from "../../hookState";
+import gV from "../../gV";
+
+
 
 
 const Card8 = ({display}) => {
@@ -22,13 +26,13 @@ const Card8 = ({display}) => {
                       <AnswerButtons
                       text={"I can upload the digital copy ➔"}
                       className={`${isSelect1 ? "answer-buttons-clicked" : "answer-buttons"}`}
-                      handleClick={() => {setIsSelect1(true); setIsSelect2(false)  }  }
+                      handleClick={() => {gV.p = 6; gV.preferTo = "upload"; setIsSelect1(true); setIsSelect2(false);  setGlobalState("formDestiny" , 3);  }  }
                      />
 
                      <AnswerButtons
                       text={"I prefer to ship them ➔"}
                       className={`${isSelect2 ? "answer-buttons-clicked" : "answer-buttons"}`}
-                      handleClick={() => {setIsSelect2(true); setIsSelect1(false)  }  }
+                      handleClick={() => {gV.p = 7; gV.preferTo="ship"; setIsSelect2(true); setIsSelect1(false);  setGlobalState("formDestiny" , 4);  }  }
                      />
                 
 

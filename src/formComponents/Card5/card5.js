@@ -1,7 +1,9 @@
 import AnswerButtons from "../components/AnswerButtons/answerButtons";
 import "./card5.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../components/AnswerButtons/answerButtons.css";
+import gV from "../../gV";
+
 
 const Card5 = () => { 
 
@@ -13,6 +15,95 @@ const Card5 = () => {
   const [isSelect4, setIsSelect4] = useState(false);
   const [isSelect5, setIsSelect5] = useState(false);
   const [isSelect6, setIsSelect6] = useState(false);
+
+  const findIndex = (catchText)=> {
+    var carIndex = gV.doYouHave.indexOf(catchText);
+    gV.doYouHave.splice(carIndex, 1);
+   
+  }
+
+//ANSWER1
+  useEffect(() => {
+    if(isSelect1) {
+      //add item
+      gV.doYouHave.push("Family history of cancer.")
+    }
+
+    else {
+      //remove item
+      findIndex("Family history of cancer.")
+    }
+   
+  } , [isSelect1]); 
+
+
+//ANSWER2
+  useEffect(() => {
+    if(isSelect2) {
+      //add item
+      gV.doYouHave.push("Breast pain.")
+    }
+
+    else {
+      //remove item
+      findIndex("Breast pain.")
+    }
+   
+  } , [isSelect2]); 
+
+
+//ANSWER3
+  useEffect(() => {
+    if(isSelect3) {
+      //add item
+      gV.doYouHave.push("Palpable lump.")
+    }
+
+    else {
+      //remove item
+      findIndex("Palpable lump.")
+    }
+   
+  } , [isSelect3]); 
+
+
+//ANSWER4
+  useEffect(() => {
+    if(isSelect4) {
+      //add item
+      gV.doYouHave.push("Genetic mutation.")
+    }
+
+    else {
+      //remove item
+      findIndex("Genetic mutation.")
+    }
+  
+  } , [isSelect4]); 
+
+
+//ANSWER5
+  useEffect(() => {
+    if(isSelect5) {
+      //add item
+      gV.doYouHave.push("I gut feeling.")
+    }
+
+    else {
+      //remove item
+      findIndex("I gut feeling.")
+    }
+  
+  } , [isSelect5]); 
+
+
+
+
+const handleChange = (e) => {
+gV.otherAnswer = e.target.value;
+
+}
+
 
 
     return (
@@ -70,6 +161,7 @@ const Card5 = () => {
             handleClick={() => { 
               setIsSelect6(!isSelect6);
               setİsShowInput(!isShowInput);
+              gV.isUserClickOtherAnswer = true;
            }}
            className={`${isSelect6 ? "answer-buttons-clicked" : "answer-buttons"}`}
            
@@ -78,7 +170,7 @@ const Card5 = () => {
            
           </div>
 
-        { isShowInput && <input placeholder="Specify other..." className="nameİnput"/>}
+        { isShowInput && <input onChange={handleChange} placeholder="Specify other..." className="nameİnput"/>}
 
 
         </div>

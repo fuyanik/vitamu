@@ -26,10 +26,10 @@ const Card7 = () => {
            
             <div className="card7-main-buttons">
                 <div className={`${isSelect1 ? "card7-main-buttons-item-selected" : "card7-main-buttons-item"}`}
-                onClick={() => {setIsSelect1(true); setIsSelect2(false); setGlobalState("formDestiny" , 1); console.log(formDestiny) }  }
+                onClick={() => {gV.isHaveDigitalCopy = "Yes"; setGlobalState("formDestiny" , 1); setIsSelect1(true); setIsSelect2(false);   }  }
                 >Yes</div>
               <div className={`${isSelect2 ? "card7-main-buttons-item-selected" : "card7-main-buttons-item"}`}
-                onClick={() => {setIsSelect2(true); setIsSelect1(false); setGlobalState("formDestiny" , 2); console.log(formDestiny)  }  }
+                onClick={() => {gV.isHaveDigitalCopy = "No"; setGlobalState("formDestiny" , 2); setIsSelect2(true); setIsSelect1(false);   }  }
                 >No</div>
             </div>
                 
