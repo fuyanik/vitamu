@@ -47,7 +47,7 @@ export default function App() {
 
 console.log("I RUNNN")
 
-db.collection("VitamuUsersTEST").add({
+{/* db.collection("VitamuUsersTEST").add({
            
    Name: gV.userName,
    UserAge : gV.age,
@@ -60,17 +60,10 @@ db.collection("VitamuUsersTEST").add({
    MedicalCenterName: gV.medicalCenterName,
    createdAt: Timestamp.now().toDate(),
   
-  }) 
+  }) */}
 
   
-  if(gV.userName !== ""){
-   
-    console.log("boşşşş")
-   }
 
-   else {
-    console.log("doluşşşş")
-   }
 
 
   useBeforeunload((event) => {

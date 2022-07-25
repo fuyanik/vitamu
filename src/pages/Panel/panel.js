@@ -12,8 +12,8 @@ const Panel = () => {
  
  
    // User status control
-  const [user] = useAuthState(auth);
-  console.log(user.email);
+  //const [user] = useAuthState(auth);
+  //console.log(user.email);
 
   // All user data array
   const [articles, setArticles] = useState([]);

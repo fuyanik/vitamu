@@ -19,7 +19,7 @@ return (
   <div className="Hero">
     <div className="hero-main">
       <div class="main-text">
-        <h1> We recheck müthiş mammograms.</h1>
+        <h1> We recheck mammograms.</h1>
 
         <p>
           {" "}
