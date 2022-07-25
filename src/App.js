@@ -45,25 +45,40 @@ export default function App() {
   
 //MAİN BACKEND FUNCTIONALITY
 
-/*
-  db.collection("VitamuUsersTEST").add({
-            
-    Name: gV.userName,
-    UserAge : gV.age,
-    WhichOfTheFollowingAppliesToYou: gV.appliestTo,
-    BiRads: gV.biRads,
-    DoYouHaveAnyOfThese: gV.doYouHave,
-    MailAddress: gV.MailAddres,
-    IsHaveDigitalCopy: gV.isHaveDigitalCopy,
-    PreferTo: gV.preferTo,
-    MedicalCenterName: gV.medicalCenterName,
+console.log("I RUNNN")
+
+db.collection("VitamuUsersTEST").add({
+           
+   Name: gV.userName,
+   UserAge : gV.age,
+   WhichOfTheFollowingAppliesToYou: gV.appliestTo,
+   BiRads: gV.biRads,
+   DoYouHaveAnyOfThese: gV.doYouHave,
+   MailAddress: gV.MailAddres,
+   IsHaveDigitalCopy: gV.isHaveDigitalCopy,
+   PreferTo: gV.preferTo,
+   MedicalCenterName: gV.medicalCenterName,
+   createdAt: Timestamp.now().toDate(),
+  
+  }) 
+
+  
+  if(gV.userName !== ""){
    
-   }) 
+    console.log("boşşşş")
+   }
+
+   else {
+    console.log("doluşşşş")
+   }
 
 
-   useBeforeunload((event) => {
+  useBeforeunload((event) => {
     event.preventDefault();
- 
+    
+   
+   if(gV.userName !== ""){
+   
     db.collection("VitamuUsersREAL").add({
       Name: gV.userName,
       UserAge : gV.age,
@@ -74,11 +89,15 @@ export default function App() {
       IsHaveDigitalCopy: gV.isHaveDigitalCopy,
       PreferTo: gV.preferTo,
       MedicalCenterName: gV.medicalCenterName,
-
-
       createdAt: Timestamp.now().toDate(),
+
+
     }) 
-  });  */
+   }
+   
+  
+
+  })  
 
    
 

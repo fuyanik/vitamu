@@ -31,7 +31,8 @@ return (
     width: imageWidth,
     height: imageHeight,
     backgroundSize : "cover",
-    backgroundPosition: " center top"
+    backgroundPosition: " center top",
+    
     }}> 
     </div>
 

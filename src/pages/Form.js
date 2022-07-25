@@ -3,7 +3,8 @@ import BackButton from '../formComponents/components/BackButton/backButton';
 import ForwardButton from '../formComponents/components/ForwardButton/forwardButton';
 import '../index.css'
 import gV from "../gV.js"
-import db from "../firebase"
+import { useBeforeunload } from "react-beforeunload";
+import { db } from '../firebase';
 
 import Card1 from '../formComponents/Card1/card1.js';
 import Card2 from '../formComponents/Card2/card2.js';
@@ -35,7 +36,7 @@ import Card11 from '../formComponents/Card11/card11';
 
 function Form () {
 
-    
+ 
 
 
   //ALL VARİABLE AND FUNCTİON HERE******************************
@@ -152,7 +153,9 @@ console.log(gV.p);
         <Card1 animation={isFade && "fade-in"} />
         <Card2/>
         <Card3/>
-        <Card4/>
+        <Card4
+         display={ (gV.biRads == "1" || gV.biRads == "2"  ||gV.biRads == "3")  && "none"}
+        />
         <Card5/>
         <Card6/>
         <Card7/>

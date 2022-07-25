@@ -23,7 +23,9 @@ const Home = () => {
 
 
  
-
+  gV.p = 0;
+  gV.i = 0;
+  gV.biRads = "";
 
   var mq = window.matchMedia( "(max-width: 768px)" );
   

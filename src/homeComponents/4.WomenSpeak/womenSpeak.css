@@ -1,28 +1,48 @@
 .women-speak {
     display: flex;
-    margin-top:  45px;
+  
     width: 100%;
     align-items: center;
     justify-content: center;
+    border: 2px solid red;
 }
 
 
 .women-area {
+    border: 2px solid blue;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     width: 92%;
     height: 1270px;
     background-color: #FBFBFB;
-    padding-left: 139px;
+   justify-content: center;
+   align-items: center;
+   gap: 5%;
+   
     
+}
+
+.women-area-left{
+    border: 2px solid green;
+   
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+   
+}
+
+.women-area-right{
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+ 
 }
 
 
 .women-cards{
-    
+  
     flex-direction: column;
-    margin-left:  50px;
+   
 }
 
 
@@ -114,29 +134,67 @@ margin-bottom: 35px;
 }
 
 
+@media screen and (max-width: 1110px) { 
+
+ .women-area-right {
+ display: none;
+ }
+
+
+}
+
+
 @media screen and (max-width: 768px) { 
 
     .women-speak {
+        display: flex;
+       
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid red;
+    }
+    
+    
+    .women-area {
+        border: 2px solid blue;
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        height: 1270px;
+        background-color: #FBFBFB;
+       justify-content: center;
+       align-items: center;
+       gap: 5%;
+       
         
-        margin-top:  0px;
+    }
+    
+    .women-area-left{
+        border: 2px solid green;
+       
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
        
     }
 
-    .women-area {
+    
+    .women-area-right{
+        border: 2px solid green;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: 100%;
-       
-        background-color: #FBFBFB;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: -100px;
-       
-       
+        flex-direction: column;
+        gap: 140px;
+     
+    }
+    
+    
+    .women-cards{
+      
+        flex-direction: column;
        
     }
+    
 
     .women-cards-header h3 {
         position: relative;
@@ -149,14 +207,6 @@ margin-bottom: 35px;
         min-width: 315px;
         }
 
-    .women-cards{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: -100px;
-        
-       
-    }
     
      .women-cards h1{
           margin-top: 15px;
@@ -186,10 +236,10 @@ margin-bottom: 35px;
 
 
             .mobile-button-2 {
+                bottom: 2%;
                 width: 205px;
                 height: 55px;
-                top:35px;
-                right: 132px;
+                align-self: flex-start;
                 border-radius: 55px;
                 
                 justify-content: space-evenly;

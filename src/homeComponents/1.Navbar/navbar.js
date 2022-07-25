@@ -161,10 +161,12 @@ onMouseLeave={() => {
   <Link
     style={{  textDecoration: "none", display: "flex", }}
     to="/">   <img class="vitamu-logo" src={vitamuLogo} alt="vitamu"/> </Link>
+
    <Link
     style={{  textDecoration: "none", display: "flex", }}
     to={mobileMenuTo}>   <div className="mobile-dropdown-menu"> {mobileMenuText}</div>  </Link>
  
+  <div className="nav-items-and-button"> 
    <ul className="nav-items">
       <li className="nav-item"  onMouseMove={() => setShowDropdown(1)  }  >Facts</li>  
       <li className="nav-item"  onMouseMove={() => setShowDropdown(2)  }  >Recheck</li>  
@@ -172,7 +174,7 @@ onMouseLeave={() => {
       <li className="nav-item"  onMouseMove={() => setShowDropdown(4)  }  >Help</li>  
    </ul>
   
-   
+  
    <Link
     style={{  textDecoration: "none",}}
     to="/form"> 
@@ -186,7 +188,9 @@ onMouseLeave={() => {
    
    </Link>
 
-   <Link
+   </div>
+
+  { /* <Link
     style={{  textDecoration: "none",}}
     to="/login"> 
      
@@ -197,7 +201,7 @@ onMouseLeave={() => {
      
    </a>  
    
-   </Link>
+       </Link> */ } 
 
     </div>
 

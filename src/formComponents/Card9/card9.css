@@ -95,5 +95,22 @@ input[type="file"]{
         width: 90%;
     }
 
+    .card9-main-texts-image-name{
+      margin-top: 10px;
+      width: 95%;
+    }
+
+    .card9-main-texts{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2px;
+        color:#222222;
+        font-family: Sofia-Light;
+    }
+       
+   
+    
+
     
 }
