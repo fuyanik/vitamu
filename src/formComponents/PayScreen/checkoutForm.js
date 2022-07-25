@@ -98,7 +98,7 @@ export default function CheckoutForm() {
       <input className="nameİnput"/>
 
       <p className="payment-form-head-text">Credit Card</p>
-      <CardElement options={CARD_OPTİONS}  id="payment-element" />
+      <PaymentElement  id="payment-element" />
 
       <div className="price-exp">
         <div> <p>Recheck </p> <p>$120.00</p></div>
