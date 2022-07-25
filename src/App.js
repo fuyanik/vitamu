@@ -116,12 +116,6 @@ db.collection("VitamuUsersTEST").add({
     
 
   
-            
-
-
- 
-  
-  
     return (
 
       <Router>
