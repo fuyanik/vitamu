@@ -4,6 +4,16 @@ import './index.css';
 import App from './App';
 
 
+import gV from "./gV";
+
+import { db } from "./firebase";
+
+import { Timestamp} from 'firebase/firestore';
+
+
+
+
+
 
 
 

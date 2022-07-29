@@ -13,6 +13,7 @@ const Panel = () => {
  
    // User status control
   //const [user] = useAuthState(auth);
+
   //console.log(user.email);
 
   // All user data array
@@ -42,6 +43,7 @@ const Panel = () => {
   const getClass4 = idx => (`item ${clicked[idx] ? ' collection-item-texts-right-selected' : ' collection-item-texts-right'}`);
 
   return (
+    // user.email  == "musta@vitamu.com" && 
     <div className="Panel">
              <div className="collections"> 
         

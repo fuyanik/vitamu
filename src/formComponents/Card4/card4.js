@@ -27,7 +27,7 @@ const Card4 = ({display}) => {
 
           <div className="card4-main-buttons">
         
-          {    (gV.biRads == "4" || gV.biRads == "4a" || gV.biRads == "4b" || gV.biRads == "4c" )  ?  null : <div className={` ${isSelect1 ? "answer-buttons-clicked" : "answer-buttons"}`}
+          {    gV.isShowBiRads123 && <div className={` ${isSelect1 ? "answer-buttons-clicked" : "answer-buttons"}`}
               onClick={() => {
               
                 gV.biRads = "1";  SetİsSelect1(true); SetİsSelect2(false); SetİsSelect3(false); SetİsSelect4a(false); SetİsSelect4b(false); SetİsSelect4c(false); }}>
@@ -36,13 +36,13 @@ const Card4 = ({display}) => {
               
            
 
-             {(gV.biRads == "4" || gV.biRads == "4a"  || gV.biRads == "4b" || gV.biRads == "4c")  ?  null : <div className={` ${isSelect2 ? "answer-buttons-clicked" : "answer-buttons"}`}
+             { gV.isShowBiRads123 && <div className={` ${isSelect2 ? "answer-buttons-clicked" : "answer-buttons"}`}
              onClick={() => { gV.biRads = "2"; SetİsSelect2(true); SetİsSelect1(false); SetİsSelect3(false); SetİsSelect4a(false); SetİsSelect4b(false); SetİsSelect4c(false); }}>
              
               2
              </div>  }
              
-             { (gV.biRads == "4" || gV.biRads == "4a"  || gV.biRads == "4b" || gV.biRads == "4c")  ? null :   <div className={` ${isSelect3 ? "answer-buttons-clicked" : "answer-buttons"}`} 
+             { gV.isShowBiRads123 &&  <div className={` ${isSelect3 ? "answer-buttons-clicked" : "answer-buttons"}`} 
              onClick={() => {   gV.biRads = "3"; SetİsSelect3(true); SetİsSelect1(false); SetİsSelect2(false); SetİsSelect4a(false); SetİsSelect4b(false); SetİsSelect4c(false); }}>
              
               3

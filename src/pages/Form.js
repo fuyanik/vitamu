@@ -3,19 +3,10 @@ import BackButton from '../formComponents/components/BackButton/backButton';
 import ForwardButton from '../formComponents/components/ForwardButton/forwardButton';
 import '../index.css'
 import gV from "../gV.js"
-import { useBeforeunload } from "react-beforeunload";
-import { db } from '../firebase';
-
 import Card1 from '../formComponents/Card1/card1.js';
 import Card2 from '../formComponents/Card2/card2.js';
-
-import { Timestamp,collection,addDocument, addDoc } from 'firebase/firestore';
-
 import { setGlobalState, useGlobalState } from "../hookState";
-
 import React from 'react';
-import Navbar from '../homeComponents/1.Navbar/navbar';
-
 import Card3 from '../formComponents/Card3/card3';
 import Card4 from '../formComponents/Card4/card4';
 import Card5 from '../formComponents/Card5/card5';
@@ -25,6 +16,9 @@ import Card8 from '../formComponents/Card8/card8';
 import Card9 from '../formComponents/Card9/card9';
 import Card10 from '../formComponents/Card10/card10';
 import Card11 from '../formComponents/Card11/card11';
+
+import { db } from  '../firebase';
+import { Timestamp,collection,addDocument, addDoc } from 'firebase/firestore';
 
 
 
@@ -36,7 +30,6 @@ import Card11 from '../formComponents/Card11/card11';
 
 function Form () {
 
- 
 
 
   //ALL VARİABLE AND FUNCTİON HERE******************************

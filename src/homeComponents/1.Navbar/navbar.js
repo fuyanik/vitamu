@@ -10,22 +10,125 @@ import dropdown4 from "./images/dropdown4.jpg"
 import vitamuLogo from "./images/vitamuLogo.png"
 import vitamuLogo2 from "./images/vitamuLogo2.png"
 
+import {db} from "../../firebase";
+import { collection, doc, setDoc, getDoc, query, where,getDocs,onSnapshot   } from "firebase/firestore"; 
+
+
 
 const Navbar = ({mobileMenuText,mobileMenuTo}) => { 
 
-   
-   
-   
-   var mq = window.matchMedia( "(max-width: 768px)" );
  
+
+
+   const  firebaseTest = async () => {
+  
+    
+
+      
+const docRef = doc(db, "cities", "S213F");
+const docSnap = await getDoc(docRef);
+
+if (docSnap.exists()) {
+  console.log("Document data:", docSnap.data() );
+} else {
+  // doc.data() will be undefined in this case
+  console.log("No such document!");
+}
+
+
+
+
+
+    
+         // QUERY SORUGUSU YAPIP İSTEDİĞİMİZ ŞARTLARI SAĞLAYANLARI GÖSTERME
+         
+ /*     
+  //WHERE TO MAKE A QUERY
+   const citiesRef = collection(db, "cities");
+  
+      
+  //SPECİFYİNG QUERY SİNGLE CONDİTİON
+   const q1 = query(citiesRef, where("state", "==", "Anotolian"))
+  
+   //SPECİFYİNG QUERY MULTİPLE CONDİTİON
+   const q2 = query(citiesRef, where("country", "in", ["USA","Japan"]),   )
+  
+   //SPECİFYİNG QUERY MULTİPLE VALUE , MULTİPLE CONDİTİON AND SİNGLE CONDİTİON
+   const q3 = query(citiesRef, where("country", "in", ["USA","Japan"]),   )
+
+   
+   
+    //RECEIVING DATA WITH UPDATED CONDITIONS
+   onSnapshot(q2, (snapshot) => {
+      const articles = snapshot.docs.map((doc) => ({
+     
+     ...doc.data(),
+       }));
+
+          articles.map((article) => {
+            console.log(article.name)
+          })
+         })  */
+    
+
+
+
+
+
+  
+                    //SET DOC
+   
+   /*  
+      const citiesRef = collection(db, "cities");
+
+       await setDoc(doc(citiesRef, "SV"), {
+         name: "Sivas Furukosu", state: "Anotolian", country: "TR",
+         capital: false, population: 220000,
+         regions: ["Western Turkey", "Turkie"] });
+          
+         await setDoc(doc(citiesRef, "SF"), {
+            name: "San Francisco", state: "CA", country: "USA",
+            capital: false, population: 860000,
+            regions: ["west_coast", "norcal"] });
+        await setDoc(doc(citiesRef, "LA"), {
+            name: "Los Angeles", state: "CA", country: "USA",
+            capital: false, population: 3900000,
+            regions: ["west_coast", "socal"] });
+        await setDoc(doc(citiesRef, "DC"), {
+            name: "Washington, D.C.", state: null, country: "USA",
+            capital: true, population: 680000,
+            regions: ["east_coast"] });
+        await setDoc(doc(citiesRef, "TOK"), {
+            name: "Tokyo", state: null, country: "Japan",
+            capital: true, population: 9000000,
+            regions: ["kanto", "honshu"] });
+        await setDoc(doc(citiesRef, "BJ"), {
+            name: "Beijing", state: null, country: "China",
+            capital: true, population: 21500000,
+            regions: ["jingjinji", "hebei"] });
+*/
+
+
+     
+   }
+
+
+
+
+
+   //media query function movile and web
+   var mq = window.matchMedia( "(max-width: 768px)" );
+   
+   //navbar change opacitiy and color when user hover in
    const [isWhite, setIsWhite] = useState(false);
 
   
   
  
- 
+  //navbar change opacitiy and color when user scroll in
    const [scrollNumber, setScrollNumber] = useState(0);
 
+   //set open dropdown menu
    const [showDropdown, setShowDropdown] = useState(0);
 
   
@@ -200,6 +303,18 @@ onMouseLeave={() => {
    </a>  
    
    </Link>
+   
+  
+     
+     <a class="button"
+     style={{width: "140px", cursor: "pointer",}}
+     onClick={firebaseTest}
+     >
+      <span style={{letterSpacing: "1px"}} className="buttonText">  Test </span>
+     
+     </a>  
+   
+   
 
    </div>
 

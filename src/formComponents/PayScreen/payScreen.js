@@ -7,6 +7,7 @@ import React, { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "./checkoutForm";
+import { collection, doc, setDoc, getDoc, query, where,getDocs,onSnapshot   } from "firebase/firestore"; 
 
 
 

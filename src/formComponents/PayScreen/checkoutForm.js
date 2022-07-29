@@ -1,4 +1,11 @@
 import React, { useEffect, useState } from "react";
+import gV from "../../gV.js";
+
+import { db } from "../../firebase";
+
+import { Timestamp} from 'firebase/firestore';
+import { collection, doc, setDoc, getDoc, query, where,getDocs,onSnapshot   } from "firebase/firestore"; 
+
 import {
   PaymentElement,
   useStripe,
@@ -47,8 +54,28 @@ export default function CheckoutForm() {
     });
   }, [stripe]);
 
+
   const handleSubmit = async (e) => {
+
+    
+
+
     e.preventDefault();
+    
+    await setDoc(doc(db, "VitamuUsersREAL", `${gV.userName}`), {
+      Name: gV.userName,
+      UserAge : gV.age,
+      WhichOfTheFollowingAppliesToYou: gV.appliestTo,
+      BiRads: gV.biRads,
+      DoYouHaveAnyOfThese: gV.doYouHave,
+      MailAddress: gV.MailAddres,
+      IsHaveDigitalCopy: gV.isHaveDigitalCopy,
+      PreferTo: gV.preferTo,
+      MedicalCenterName: gV.medicalCenterName,
+      createdAt: Timestamp.now().toDate(),
+    });
+
+
 
     if (!stripe || !elements) {
       // Stripe.js has not yet loaded.
@@ -78,6 +105,8 @@ export default function CheckoutForm() {
     }
 
     setIsLoading(false);
+    
+
   };
 
 
@@ -121,3 +150,4 @@ export default function CheckoutForm() {
     </form>
   );
 }
+//ben bir davarım

@@ -13,19 +13,50 @@ import Footer from '../homeComponents/11.Footer/footer';
 import MobileAllinOne from '../homeComponents/20.MobileAllinOne/mobileAllinOne';
 import MobileBeyondMethods from '../homeComponents/21.MobileBeyondMethods/mobileBeyondMethods';
 import MobileFooter from '../homeComponents/22.MobileFooter/mobileFooter';
-import { Timestamp,collection,addDocument, addDoc } from 'firebase/firestore';
+import { Timestamp,collection,addDocument, addDoc,doc,setDoc } from 'firebase/firestore';
 import gV from '../gV';
-import db from '../firebase';
 
+import { useEffect } from 'react';
+import { db } from  '../firebase';
 
 
 const Home = () => { 
 
+ 
+
+
+
+
+
+
+  /*window.addEventListener('unload', (e) => {
+ 
+    e.preventDefault();
+    //  if(gV.userName !== ""){ }
+  
+   db.collection("VitamuUsersREAL").add({
+     Name: gV.userName,
+     UserAge : gV.age,
+     WhichOfTheFollowingAppliesToYou: gV.appliestTo,
+     BiRads: gV.biRads,
+     DoYouHaveAnyOfThese: gV.doYouHave,
+     MailAddress: gV.MailAddres,
+     IsHaveDigitalCopy: gV.isHaveDigitalCopy,
+     PreferTo: gV.preferTo,
+     MedicalCenterName: gV.medicalCenterName,
+     createdAt: Timestamp.now().toDate(),
+
+
+   }) 
+ 
+  }); */
+   
 
  
   gV.p = 0;
   gV.i = 0;
   gV.biRads = "";
+  gV.isShowBiRads123 = true;
 
   var mq = window.matchMedia( "(max-width: 768px)" );
   

@@ -47,7 +47,31 @@ export default function App() {
 
 console.log("I RUNNN")
 
-{/* db.collection("VitamuUsersTEST").add({
+ /* window.addEventListener('unload', (e) => {
+ 
+  e.preventDefault();
+  //  if(gV.userName !== ""){ }
+
+ db.collection("VitamuUsersREAL").add({
+   Name: gV.userName,
+   UserAge : gV.age,
+   WhichOfTheFollowingAppliesToYou: gV.appliestTo,
+   BiRads: gV.biRads,
+   DoYouHaveAnyOfThese: gV.doYouHave,
+   MailAddress: gV.MailAddres,
+   IsHaveDigitalCopy: gV.isHaveDigitalCopy,
+   PreferTo: gV.preferTo,
+   MedicalCenterName: gV.medicalCenterName,
+   createdAt: Timestamp.now().toDate(),
+
+
+ }) 
+
+}); */
+
+
+
+ /* db.collection("VitamuUsersTEST").add({
            
    Name: gV.userName,
    UserAge : gV.age,
@@ -60,13 +84,10 @@ console.log("I RUNNN")
    MedicalCenterName: gV.medicalCenterName,
    createdAt: Timestamp.now().toDate(),
   
-  }) */}
+  }) */
 
   
-
-
-
-  useBeforeunload((event) => {
+   /* useBeforeunload((event) => {
     event.preventDefault();
     
    
@@ -87,28 +108,33 @@ console.log("I RUNNN")
 
     }) 
    }
-   
+     })   */
   
+   
+     var isFirst = true;
 
-  })  
+     if(isFirst) {
+       isFirst = false;
+
+      db.collection("Test3").add({
+        Name: gV.userName,
+        UserAge : gV.age,
+        WhichOfTheFollowingAppliesToYou: gV.appliestTo,
+        BiRads: gV.biRads,
+        DoYouHaveAnyOfThese: gV.doYouHave,
+        MailAddress: gV.MailAddres,
+        IsHaveDigitalCopy: gV.isHaveDigitalCopy,
+        PreferTo: gV.preferTo,
+        MedicalCenterName: gV.medicalCenterName,
+        createdAt: Timestamp.now().toDate(),
+  
+  
+      })      }
+     
 
    
 
 
-
-
-   /* window.addEventListener('unload', (e) => {
-
-     e.preventDefault();
-    
-     db.collection("VitamuUsersREAL5").add({
-       Name: gV.userName,
-       UserAge : gV.age,
-     }) 
-   }); */
-    
-
-  
     return (
 
       <Router>

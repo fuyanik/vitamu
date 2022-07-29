@@ -46,7 +46,7 @@ return (
         <Link style={{  textDecoration: "none",}} to="/form">  <p onClick={()=>{gV.biRads = "1"; gV.p = 1}}>Bi-rads 1 ➔</p> </Link> 
         <Link style={{  textDecoration: "none",}} to="/form">  <p onClick={()=>{gV.biRads = "2"; gV.p = 1}} >Bi-rads 2 ➔</p> </Link> 
         <Link style={{  textDecoration: "none",}} to="/form">  <p onClick={()=>{gV.biRads = "3"; gV.p = 1}}  >Bi-rads 3 ➔</p> </Link> 
-        <Link style={{  textDecoration: "none",}} to="/form">  <p onClick={()=>{gV.biRads = "4"; gV.p = 1}} >Bi-rads 4 ➔</p> </Link> 
+        <Link style={{  textDecoration: "none",}} to="/form">  <p onClick={()=>{gV.isShowBiRads123 = false; gV.p = 1}} >Bi-rads 4 ➔</p> </Link> 
         
         
         

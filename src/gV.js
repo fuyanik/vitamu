@@ -9,7 +9,7 @@ const gV =
    //User information from the form, it is used to send the data to the server with backedn
   
     //CARD1
-    userName: "",
+    userName: "qwe",
    
     //CARD2
     age: 1,
@@ -19,6 +19,7 @@ const gV =
 
     //CARD4
     biRads: "",
+    isShowBiRads123: true,
 
     //CARD5
     doYouHave: ["furukos"],

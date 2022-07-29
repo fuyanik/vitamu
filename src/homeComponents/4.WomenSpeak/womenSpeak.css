@@ -4,12 +4,12 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
+  
 }
 
 
 .women-area {
-    border: 2px solid blue;
+ 
     display: flex;
     width: 92%;
     height: 1270px;
@@ -22,7 +22,7 @@
 }
 
 .women-area-left{
-    border: 2px solid green;
+  
    
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
 }
 
 .women-area-right{
-    border: 2px solid green;
+   
     display: flex;
     flex-direction: column;
     gap: 140px;
@@ -152,12 +152,12 @@ margin-bottom: 35px;
         width: 100%;
         align-items: center;
         justify-content: center;
-        border: 2px solid red;
+     
     }
     
     
     .women-area {
-        border: 2px solid blue;
+        
         display: flex;
         flex-direction: column;
         width: 92%;
@@ -171,7 +171,7 @@ margin-bottom: 35px;
     }
     
     .women-area-left{
-        border: 2px solid green;
+     
        
         display: flex;
         flex-direction: column;
@@ -181,7 +181,7 @@ margin-bottom: 35px;
 
     
     .women-area-right{
-        border: 2px solid green;
+      
         display: flex;
         flex-direction: column;
         gap: 140px;
